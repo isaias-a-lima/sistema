@@ -1,0 +1,87 @@
+body{
+    background-color: #690027;
+    
+}
+
+h1,h2,h3,h4,h5{
+    color: #690027;
+}
+
+.menu{
+    background:#ddd;
+    padding: 1%;
+    margin: 10px 1%;
+    border-radius: 10px;
+}
+
+.menu .btn-danger{
+    background:#690027;
+    border-color: #690027;
+}
+
+.menu .btn-danger:hover{
+    background: #8a1138;
+
+}
+
+.topo{
+    background: #eee;
+    width: 100%;
+    position: static;
+    height: 150px;
+    padding: 10px 0;
+    box-shadow: 0px 5px 10px rgba(50, 50, 50, 0.9);  
+    z-index: +1;
+}
+
+.topo .container{
+    background: #eee;
+}
+
+section{
+    margin: 20px 0;
+    
+}
+
+section .container{
+    background: #fff;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.topo .glyphicon{
+    color: #690027;
+    font-size: 40px;
+    margin: 25px 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.topo .glyphicon:hover{
+    box-shadow: 1px 1px 5px #aaa;
+}
+
+@media only screen and (max-width: 574px){
+    .menu .btn-danger{
+        display: block;
+        width: 98%;
+        margin: 5px 1%;
+     }
+}
+
+@media only screen and (max-width: 480px){
+
+    .topo .glyphicon{
+        font-size: 30px;
+        padding: 10px;
+        margin: 30px 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    section .container{
+        border-radius: 0;
+    }
+}

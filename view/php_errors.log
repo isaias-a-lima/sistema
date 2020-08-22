@@ -1,0 +1,1425 @@
+[18-Aug-2020 01:20:13 UTC] PHP Notice:  Undefined variable: res in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 27
+[18-Aug-2020 01:20:40 UTC] PHP Notice:  Undefined variable: res in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 28
+[18-Aug-2020 01:21:22 UTC] PHP Fatal error:  Uncaught Error: Class 'model\Pessoa' not found in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php:4
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(6): require_once()
+#1 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(5): require_once('C:\\inetpub\\wwwr...')
+#2 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(6): require_once('C:\\inetpub\\wwwr...')
+#3 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php on line 4
+[18-Aug-2020 01:24:48 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 01:24:48 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 01:24:48 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(13): dto\PessoaDto->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(14): dto\FuncionarioDto->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(11): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#3 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 01:29:18 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 01:29:18 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 01:29:18 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(13): dto\PessoaDto->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(14): dto\FuncionarioDto->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(11): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#3 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 01:32:09 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:32:09 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:32:29 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:32:29 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:33:19 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:33:19 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:33:19 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:33:19 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:35:20 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:35:20 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:35:20 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:35:20 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:35:28 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:35:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 2
+[18-Aug-2020 01:35:28 UTC] PHP Notice:  Undefined variable: r in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:35:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 3
+[18-Aug-2020 01:35:57 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(13): dto\PessoaDto->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(14): dto\FuncionarioDto->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#3 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 01:40:22 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 01:43:20 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 01:44:11 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 16
+[18-Aug-2020 02:58:51 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(14): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 02:59:52 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:00:41 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Undefined variable: dados in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 11
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:01:40 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Undefined variable: dados in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 11
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:02:05 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Undefined variable: dados in C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php on line 11
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:02:28 UTC] PHP Notice:  Trying to access array offset on value of type null in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:20:42 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(14): dto\PessoaDto->__construct(Object(stdClass))
+#1 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(11): dto\FuncionarioDto->__construct(Object(stdClass))
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:22:07 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:35:26 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:35:51 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:40:57 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(12): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'nome' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'telefone' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'email' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'funcao' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'senha' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:44:11 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'nome' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'telefone' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'email' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'funcao' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'senha' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 14
+[18-Aug-2020 03:45:11 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:47:16 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'nome' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'telefone' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'email' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'funcao' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'senha' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 19
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:47:16 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 16
+[18-Aug-2020 03:48:08 UTC] PHP Warning:  json_decode() expects parameter 1 to be string, array given in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'nome' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'telefone' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'email' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'funcao' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'senha' of non-object in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 19
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:48:08 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 16
+[18-Aug-2020 03:49:47 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:49:47 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 16
+[18-Aug-2020 03:49:47 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(14): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:51:36 UTC] PHP Notice:  Trying to get property 'id' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 15
+[18-Aug-2020 03:51:36 UTC] PHP Notice:  Trying to get property 'statusFuncionario' of non-object in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 16
+[18-Aug-2020 03:51:36 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(14): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:52:25 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(14): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 03:53:59 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:15
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(13): dto\PessoaDto->__construct(Object(stdClass))
+#1 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(11): dto\FuncionarioDto->__construct('{"id":"","nome"...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:54:57 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type stdClass as array in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php:15
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php(13): dto\PessoaDto->__construct(Object(stdClass))
+#1 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(11): dto\FuncionarioDto->__construct('{"id":"","nome"...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 20:50:56 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type dto\FuncionarioDto as array in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php:14
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Funcionario.php(13): model\Pessoa->__construct(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php(15): model\Funcionario->__construct(Object(dto\FuncionarioDto))
+#2 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#3 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(27): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#4 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Pessoa.php on line 14
+[18-Aug-2020 20:58:24 UTC] PHP Fatal error:  Uncaught Error: Call to private dao\Connection::__construct() from context 'dao\FuncionarioDao' in C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php:16
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\controller\FuncionarioController.php(26): dao\FuncionarioDao->incluir(Object(dto\FuncionarioDto))
+#1 C:\inetpub\wwwroot\sistema\api\view\funcionario-novo.php(27): Controller\FuncionarioController->incluir(Object(dto\FuncionarioDto))
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dao\FuncionarioDao.php on line 16
+[19-Aug-2020 17:05:15 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 17:05:15 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 17:05:15 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 17:05:15 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 17:05:15 UTC] PHP Warning:  include(./view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 11
+[19-Aug-2020 17:05:15 UTC] PHP Warning:  include(): Failed opening './view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 11
+[19-Aug-2020 17:05:15 UTC] PHP Warning:  include(./view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 11
+[19-Aug-2020 17:05:15 UTC] PHP Warning:  include(): Failed opening './view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 11
+[19-Aug-2020 17:07:10 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 17:07:10 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 17:16:23 UTC] PHP Warning:  require_once(api/dto/FuncionarioDto.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\logar.php on line 7
+[19-Aug-2020 17:16:23 UTC] PHP Fatal error:  require_once(): Failed opening required 'api/dto/FuncionarioDto.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\logar.php on line 7
+[19-Aug-2020 17:16:58 UTC] PHP Warning:  require_once(../dto/FuncionarioDto.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\logar.php on line 7
+[19-Aug-2020 17:16:58 UTC] PHP Fatal error:  require_once(): Failed opening required '../dto/FuncionarioDto.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\logar.php on line 7
+[19-Aug-2020 17:17:44 UTC] PHP Warning:  require_once(../dto/PessoaDto.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 5
+[19-Aug-2020 17:17:44 UTC] PHP Fatal error:  require_once(): Failed opening required '../dto/PessoaDto.php' (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\api\dto\FuncionarioDto.php on line 5
+[19-Aug-2020 18:27:37 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 14
+[19-Aug-2020 18:27:37 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 15
+[19-Aug-2020 18:27:37 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 17
+[19-Aug-2020 18:27:37 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:27:37 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 18:33:33 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 15
+[19-Aug-2020 18:33:33 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 17
+[19-Aug-2020 18:33:33 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:33:33 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 18:36:04 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:36:04 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 18:42:04 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 14
+[19-Aug-2020 18:42:04 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 15
+[19-Aug-2020 18:42:04 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 17
+[19-Aug-2020 18:42:04 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:42:04 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 18:45:08 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 14
+[19-Aug-2020 18:45:08 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 15
+[19-Aug-2020 18:45:08 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 17
+[19-Aug-2020 18:45:08 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:45:08 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 18:45:17 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 14
+[19-Aug-2020 18:45:17 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 15
+[19-Aug-2020 18:45:17 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 17
+[19-Aug-2020 18:45:17 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 18:45:17 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:06:46 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 21
+[19-Aug-2020 19:06:46 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:06:46 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:06:46 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:09:16 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 21
+[19-Aug-2020 19:09:16 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:09:16 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:09:16 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:09:20 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 21
+[19-Aug-2020 19:09:20 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:09:20 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:09:20 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:09:50 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 21
+[19-Aug-2020 19:09:50 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:09:50 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:09:50 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:12:20 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:12:20 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:12:20 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:12:37 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\dto\PessoaDto.php on line 23
+[19-Aug-2020 19:12:37 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:12:37 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 19:16:42 UTC] PHP Notice:  Undefined index: id in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 15
+[19-Aug-2020 19:16:42 UTC] PHP Notice:  Undefined index: statusFuncionario in C:\inetpub\wwwroot\sistema\dto\FuncionarioDto.php on line 16
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined variable: msg in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 20:51:03 UTC] PHP Notice:  Undefined variable: msg in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:51:15 UTC] PHP Notice:  Undefined variable: msg in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:51:16 UTC] PHP Notice:  Undefined variable: msg in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:53:11 UTC] PHP Notice:  Undefined variable: aviso in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:53:13 UTC] PHP Notice:  Undefined variable: aviso in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:53:14 UTC] PHP Notice:  Undefined variable: aviso in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:53:14 UTC] PHP Notice:  Undefined variable: aviso in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 20:53:14 UTC] PHP Notice:  Undefined variable: aviso in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[19-Aug-2020 21:18:07 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 21:18:07 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 21:18:20 UTC] PHP Warning:  mysqli_stmt::bind_param(): Number of variables doesn't match number of parameters in prepared statement in C:\inetpub\wwwroot\sistema\dao\FuncionarioDao.php on line 65
+[19-Aug-2020 21:30:20 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[19-Aug-2020 21:30:20 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 21:30:20 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 21:34:00 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 9
+[19-Aug-2020 21:34:00 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 21:35:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[19-Aug-2020 21:35:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 9
+[19-Aug-2020 21:35:57 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[19-Aug-2020 21:36:33 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\view\sessao.php on line 6
+[19-Aug-2020 21:37:26 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\view\sessao.php on line 7
+[19-Aug-2020 21:38:58 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[19-Aug-2020 21:38:58 UTC] PHP Notice:  Undefined variable: p in C:\inetpub\wwwroot\sistema\view\paginas.php on line 10
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:41 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:46 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:47 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:50 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:51 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:50:56 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Fatal error:  Uncaught Error: Class 'Controller\FuncionarioController' not found in C:\inetpub\wwwroot\sistema\view\logar.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(16): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\logar.php on line 20
+[20-Aug-2020 00:51:26 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 00:51:37 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 00:51:37 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 00:52:00 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 00:52:04 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 01:02:10 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 01:02:10 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 01:05:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 01:05:28 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 10
+[20-Aug-2020 02:53:03 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 02:54:47 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 02:54:47 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 02:54:57 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:09:15 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(c:\windows\temp) failed: No error (0) in C:\inetpub\wwwroot\sistema\view\sessao.php on line 5
+[20-Aug-2020 03:13:59 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:13:59 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:14:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:19:36 UTC] PHP Notice:  Undefined index: funcaoSession in C:\inetpub\wwwroot\sistema\view\paginas.php on line 21
+[20-Aug-2020 03:19:41 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:19:41 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:19:49 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:20:36 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:20:36 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:20:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:21:19 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:21:19 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:22:32 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:30:45 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(c:\windows\temp) failed: No error (0) in C:\inetpub\wwwroot\sistema\view\sessao.php on line 5
+[20-Aug-2020 03:30:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:30:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:31:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:33:29 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:33:29 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:33:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:36:20 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:36:20 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:36:37 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 03:41:14 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 03:41:14 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 12:15:51 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 12:15:51 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:13:08 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 22:26:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:26:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:27:11 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:43 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:44 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:30:49 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:19 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:31:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(../view/logar.php): failed to open stream: No such file or directory in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:32:20 UTC] PHP Warning:  include(): Failed opening '../view/logar.php' for inclusion (include_path='.;C:\php\pear') in C:\inetpub\wwwroot\sistema\view\paginas.php on line 18
+[20-Aug-2020 22:34:31 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:34:31 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:34:46 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 22:46:54 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:46:54 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 22:47:05 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[20-Aug-2020 23:04:39 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 23:04:39 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[20-Aug-2020 23:04:47 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 51
+[21-Aug-2020 00:31:09 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 00:31:09 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 00:31:23 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 63
+[21-Aug-2020 00:31:46 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 00:31:46 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 00:46:09 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 63
+[21-Aug-2020 01:23:07 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in C:\inetpub\wwwroot\sistema\view\funcionario_usuario.php:20
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\view\paginas.php(26): include()
+#1 C:\inetpub\wwwroot\sistema\view\index.php(38): include('C:\\inetpub\\wwwr...')
+#2 {main}
+  thrown in C:\inetpub\wwwroot\sistema\view\funcionario_usuario.php on line 20
+[21-Aug-2020 01:23:45 UTC] PHP Notice:  Undefined property: mysqli_result::$nome in C:\inetpub\wwwroot\sistema\view\funcionario_usuario.php on line 20
+[21-Aug-2020 01:24:49 UTC] PHP Notice:  Trying to get property 'nome' of non-object in C:\inetpub\wwwroot\sistema\view\funcionario_usuario.php on line 20
+[21-Aug-2020 02:30:24 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 02:30:24 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 02:30:42 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 03:54:02 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 03:54:02 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 03:54:07 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 04:34:38 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:34:38 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:34:44 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 04:34:50 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:34:50 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:34:56 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 04:44:54 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:44:54 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:44:55 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:44:55 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:44:55 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:44:55 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:45:02 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 04:46:28 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:46:28 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:46:29 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:46:29 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:46:35 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[21-Aug-2020 04:46:41 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:46:41 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[21-Aug-2020 04:51:22 UTC] PHP Notice:  Undefined variable: msg in C:\inetpub\wwwroot\sistema\view\formando_logar.php on line 11
+[22-Aug-2020 01:04:53 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:04:53 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:05:40 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:05:40 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:05:53 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:05:53 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:05:59 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[22-Aug-2020 01:06:10 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:06:10 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:06:21 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:06:21 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:10:35 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:10:35 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:10:50 UTC] PHP Notice:  session_start(): A session had already been started - ignoring in C:\inetpub\wwwroot\sistema\controller\FuncionarioController.php on line 64
+[22-Aug-2020 01:10:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11
+[22-Aug-2020 01:10:57 UTC] PHP Notice:  Undefined index: p in C:\inetpub\wwwroot\sistema\view\sessao.php on line 11

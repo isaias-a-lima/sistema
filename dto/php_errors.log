@@ -1,0 +1,18 @@
+[18-Aug-2020 02:41:37 UTC] PHP Fatal error:  Uncaught Error: Class 'dto\PessoaDto' not found in C:\inetpub\wwwroot\sistema\api\dto\PessoaDtoTeste.php:8
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\dto\PessoaDtoTeste.php on line 8
+[18-Aug-2020 02:42:39 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 02:42:39 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 02:42:39 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 02:42:39 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 02:42:39 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 02:47:22 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 02:47:22 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 02:47:22 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 02:47:22 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18
+[18-Aug-2020 03:08:17 UTC] PHP Notice:  Undefined index: nome in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 14
+[18-Aug-2020 03:08:17 UTC] PHP Notice:  Undefined index: telefone in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 15
+[18-Aug-2020 03:08:17 UTC] PHP Notice:  Undefined index: email in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 16
+[18-Aug-2020 03:08:17 UTC] PHP Notice:  Undefined index: funcao in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 17
+[18-Aug-2020 03:08:17 UTC] PHP Notice:  Undefined index: senha in C:\inetpub\wwwroot\sistema\api\dto\PessoaDto.php on line 18

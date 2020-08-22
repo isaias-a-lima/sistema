@@ -1,0 +1,120 @@
+[16-Aug-2020 22:40:16 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:41:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:41:44 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:41:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:45:06 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:45:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:45:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:45:07 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:35 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:36 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:37 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:49:38 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:50:02 UTC] PHP Fatal error:  Uncaught Error: Class 'model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:50:03 UTC] PHP Fatal error:  Uncaught Error: Class 'model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:50:03 UTC] PHP Fatal error:  Uncaught Error: Class 'model\Funcionario' not found in C:\inetpub\wwwroot\sistema\api\model\Teste.php:5
+Stack trace:
+#0 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 5
+[16-Aug-2020 22:50:52 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Pessoa' not found in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php:4
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Teste.php(3): require_once()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php on line 4
+[16-Aug-2020 22:51:10 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Pessoa' not found in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php:4
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Teste.php(3): require_once()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php on line 4
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: nome in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: telefone in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: email in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: funcao in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: senha in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: id in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Notice:  Undefined variable: statusFuncionario in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 6
+[16-Aug-2020 22:51:38 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 7
+[16-Aug-2020 22:51:38 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 8
+[16-Aug-2020 22:53:02 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 7
+[16-Aug-2020 22:53:02 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 7
+[16-Aug-2020 22:53:02 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 8
+[16-Aug-2020 22:53:02 UTC] PHP Warning:  A non-numeric value encountered in C:\inetpub\wwwroot\sistema\api\model\Teste.php on line 8
+[16-Aug-2020 22:54:49 UTC] PHP Fatal error:  Uncaught Error: Class 'Model\Pessoa' not found in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php:4
+Stack trace:
+#0 C:\inetpub\wwwroot\sistema\api\model\Teste.php(3): require_once()
+#1 {main}
+  thrown in C:\inetpub\wwwroot\sistema\api\model\Funcionario.php on line 4
