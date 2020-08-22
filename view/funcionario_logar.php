@@ -23,10 +23,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         $msg = '<div class="alert alert-danger">'. $res .'</div>';
     }
     
-}else if($_GET['p'] == 'lo'){
-
-    $controller = new FuncionarioController();
-    $res = $controller->logout();
 }
 ?>
 <div class="row">
