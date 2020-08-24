@@ -98,6 +98,28 @@ class FuncionarioDao{
         return $msg;
     }
 
+    function mudarSenha($dto,$senhaNova){
+        $msg = null;
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = "update funcionarios set senha=? where id=? and senha=?";
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("sis",$senhaNova,$id,$senhaAtual);
 
+        $id = $dto->getId();
+        $senhaAtual = $dto->getSenha();
+
+        $stmt->execute();
+
+        if($stmt->error){
+            $msg = 'ERRO: ' . $stmt->error . '<br>' . $sql;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+        
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
 }
 ?>

@@ -82,6 +82,24 @@ class FuncionarioController{
             return true;
         }        
     }
+
+    function mudarSenha($dto, $senhaNova){
+        if(empty($dto->getId()) || empty($dto->getSenha()) || empty($senhaNova)){
+            return 'ERRO: Dados obrigatórios não foram informados!';
+        }        
+        $dao = new FuncionarioDao();
+        $res = $dao->mudarSenha($dto,$senhaNova);
+        if(is_string($res)){
+            return $res;            
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível mudar a senha! Verifique os dados digitados!</div>';
+            }else{
+                header('Location:../view/?p=lo');
+            }
+        }
+    }
 }
 
 ?>

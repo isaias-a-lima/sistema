@@ -46,8 +46,9 @@ if (is_string($res)) {
             </tr>
         </table>
 
-        <button type="button" class="btn btn-default">Atualizar dados</button>
-        <button type="button" class="btn btn-default">Mudar senha</button>
+        <button type="button" id="btn_fad" class="btn btn-default">Atualizar dados</button>
+        <button type="button" id="btn_fms" class="btn btn-default">Mudar senha</button>       
 
     </div>
 </div>
+<script src="../view/funcionario_usuario.js"></script>

@@ -33,4 +33,7 @@ switch ($p) {
             include '../view/funcionario_menu.php';
         }
         break;
+    case 'fms':
+        include '../view/funcionario_mudar_senha.php';
+        break;
 }
