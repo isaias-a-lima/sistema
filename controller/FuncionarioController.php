@@ -96,7 +96,8 @@ class FuncionarioController{
             if($res < 1){
                 return '<div class="alert alert-danger">Não foi possível mudar a senha! Verifique os dados digitados!</div>';
             }else{
-                header('Location:../view/?p=lo');
+                //header('Location:../view/?p=lo');
+                echo '<script>window.location.href="../view/?p=lo";</script>';
             }
         }
     }
