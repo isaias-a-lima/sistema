@@ -41,6 +41,34 @@ class FuncionarioDao{
         return $msg;
     }
 
+    public function alterarDados($dto){
+        $msg = null;       
+        $funcionario = new Funcionario($dto);
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = 'update funcionarios set nome=?,telefone=?,email=?,funcao=? where id=?';        
+        
+        $stmt = $link->prepare($sql);        
+        $stmt->bind_param("sssss",$nome,$telefone,$email,$funcao,$id);
+        
+        $nome = $funcionario->getNome();
+        $telefone = $funcionario->getTelefone();
+        $email = $funcionario->getEmail();
+        $funcao = $funcionario->getFuncao();
+        $id = $funcionario->getId();        
+
+        $stmt->execute();        
+
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
+
     function listar(){
         $msg = null;
         $conn = new Connection();

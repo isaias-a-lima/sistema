@@ -14,12 +14,12 @@ h1,h2,h3,h4,h5{
     border-radius: 10px;
 }
 
-.menu .btn-danger{
+.btn-danger{
     background:#690027;
     border-color: #690027;
 }
 
-.menu .btn-danger:hover{
+.btn-danger:hover{
     background: #8a1138;
 
 }

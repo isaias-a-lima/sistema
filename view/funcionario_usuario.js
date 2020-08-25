@@ -7,3 +7,10 @@ function mudarSenha(){
         window.location.href="../view/?p=fms";
     }
 }
+
+var btn_fad = document.getElementById('btn_fad');
+btn_fad.addEventListener('click',alterarDados);
+
+function alterarDados(){
+    window.location.href="../view/?p=fad";
+}

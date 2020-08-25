@@ -27,6 +27,35 @@ class FuncionarioController{
         return $res;
     }
 
+    public function alterarDados($dto){
+        if(empty($dto->getNome())){
+            return 'Nome é obrigatório!';
+        }
+        if(empty($dto->getEmail())){
+            return 'E-mail é obrigatório!';
+        }
+        if(empty($dto->getFuncao())){
+            return 'Função é obrigatório!';
+        }        
+        if(empty($dto->getId())){
+            return 'Id é obrigatório!';
+        }
+        $funcDao = new FuncionarioDao();
+        $res = $funcDao->alterarDados($dto);
+        if(is_string($res)){
+            return $res;            
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível alterar os dados!</div>';
+            }else{
+                $retorno = '<div class="alert alert-danger">Dados alterado com sucesso!</div>';
+                $retorno .= '<script>setTimeout(function(){window.location.href="../view/?p=lf"},2000);</script>';
+                return $retorno;
+            }
+        }
+    }
+
     function listar(){
         $funcDao = new FuncionarioDao();
         $res = $funcDao->listar();
@@ -95,8 +124,7 @@ class FuncionarioController{
         if(is_numeric($res)){
             if($res < 1){
                 return '<div class="alert alert-danger">Não foi possível mudar a senha! Verifique os dados digitados!</div>';
-            }else{
-                //header('Location:../view/?p=lo');
+            }else{                
                 echo '<script>window.location.href="../view/?p=lo";</script>';
             }
         }

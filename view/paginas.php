@@ -36,4 +36,7 @@ switch ($p) {
     case 'fms':
         include '../view/funcionario_mudar_senha.php';
         break;
+    case 'fad':
+        include '../view/funcionario_alterar_dados.php';
+        break;
 }

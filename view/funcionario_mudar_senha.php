@@ -37,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
                 <label>Confirme a Senha Nova</label>
                 <input type="password" name="senhaNovaB" id="senhaNovaB" class="form-control" required>
             </div>
-            <button type="button" id="btn_fms" class="btn btn-default">Salvar</button>
+            <button type="button" id="btn_fms" class="btn btn-danger">Salvar</button>
         </form>
     </div>
 </div>
