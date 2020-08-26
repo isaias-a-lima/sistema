@@ -37,7 +37,7 @@ if(is_array($res)){
 
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
-        <h2><span class="glyphicon glyphicon-cog"></span> Dados do usuário / Atualizar dados</h2>
+        <h2><span class="glyphicon glyphicon-cog"></span> Usuário / Atualizar</h2>
         
         <div id="msg"></div>
         <?= $msg ?>

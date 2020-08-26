@@ -46,13 +46,14 @@
 
             <h4><span class="glyphicon glyphicon-wrench"></span> Sistema</h4>
 
-            <button type="button" class="btn btn-danger">
+            <button id="btn_fin" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-plus"></span> Novo usuário
             </button>
-            <button type="button" class="btn btn-danger">
+            <button id="btn_flis" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-search"></span> Consultar usuários
             </button>         
 
         </div>
     </div>
 </div>
+<script src="../view/funcionario_menu.js"></script>

@@ -39,4 +39,10 @@ switch ($p) {
     case 'fad':
         include '../view/funcionario_alterar_dados.php';
         break;
+    case 'fin':
+        include '../view/funcionario_incluir.php';
+        break;
+    case 'flis':
+        include '../view/funcionario_listar.php';
+        break;
 }

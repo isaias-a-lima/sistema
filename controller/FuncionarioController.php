@@ -9,7 +9,6 @@ use dao\FuncionarioDao;
 class FuncionarioController{
     
     function incluir($dto){        
-        
         if(empty($dto->getNome())){
             return 'Nome é obrigatório!';
         }
@@ -24,7 +23,17 @@ class FuncionarioController{
         }
         $funcDao = new FuncionarioDao();
         $res = $funcDao->incluir($dto);
-        return $res;
+        if(is_string($res)){
+            $msg = '<div class="alert alert-danger">Erro de sistema!</div>';
+            $msg .= '<script>console.log('. $res .')</script>';
+            return $res;
+        }
+        if(is_numeric($res)){
+            $msg = '<div class="alert alert-danger">Usuário incluído com sucesso!</div>';
+            $msg .= '<script>setTimeout(function(){window.location.href="../view/?p=flis"},2000);</script>';
+            return $msg;
+        }
+        
     }
 
     public function alterarDados($dto){
@@ -59,6 +68,9 @@ class FuncionarioController{
     function listar(){
         $funcDao = new FuncionarioDao();
         $res = $funcDao->listar();
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível alterar os dados!</div>';
+        }
         return $res;
     }
 

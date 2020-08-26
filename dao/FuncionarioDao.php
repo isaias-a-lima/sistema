@@ -73,13 +73,15 @@ class FuncionarioDao{
         $msg = null;
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = "select * from funcionarios order by nome";
-        $res = $link->query($sql);
-        if($res->num_rows > 0){
-            $msg = $res;
+        $sql = "select * from funcionarios";
+        $stmt = $link->prepare($sql);       
+        $stmt->execute();
+        if($stmt->error){
+            $msg = $stmt->error;
         }else{
-            $msg = "ERRO: " . $link->error . "<br>" . $sql;
+            $msg = $stmt->get_result();
         }
+        $stmt->close();
         $conn->closeConn();
         return $msg;
     }

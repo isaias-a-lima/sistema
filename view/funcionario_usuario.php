@@ -28,7 +28,7 @@ if (is_string($res)) {
 
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
-        <h2><span class="glyphicon glyphicon-cog"></span> Dados do usuário</h2>
+        <h2><span class="glyphicon glyphicon-cog"></span> Usuário</h2>
         <?= $msg ?>
 
         <table class="table">
