@@ -9,7 +9,7 @@
     <?php include 'estilos.php'; ?>
 </head>
 
-<body>
+<body>  
 
     <header class="topo">
         <div class="container" style="height: 100%;">
@@ -49,5 +49,7 @@
     </section>
 
 </body>
+
+<script src="../view/main.js"></script>
 
 </html>
