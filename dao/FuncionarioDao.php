@@ -41,6 +41,35 @@ class FuncionarioDao{
         return $msg;
     }
 
+    public function editar($dto){
+        $msg = null;       
+        $funcionario = new Funcionario($dto);
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = 'update funcionarios set nome=?,telefone=?,email=?,funcao=?,statusFuncionario=? where id=?';        
+        
+        $stmt = $link->prepare($sql);        
+        $stmt->bind_param("ssssss",$nome,$telefone,$email,$funcao,$statusFuncionario,$id);
+        
+        $nome = $funcionario->getNome();
+        $telefone = $funcionario->getTelefone();
+        $email = $funcionario->getEmail();
+        $funcao = $funcionario->getFuncao();
+        $statusFuncionario = $funcionario->getStatusFuncionario();
+        $id = $funcionario->getId();        
+
+        $stmt->execute();        
+
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
+
     public function alterarDados($dto){
         $msg = null;       
         $funcionario = new Funcionario($dto);
@@ -69,12 +98,32 @@ class FuncionarioDao{
         return $msg;
     }
 
-    function listar(){
+    function remover($id){
         $msg = null;
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = "select * from funcionarios";
-        $stmt = $link->prepare($sql);       
+        $sql = "update funcionarios set statusFuncionario='Removido' where id=?";
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("i",$id);
+        $stmt->execute();
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
+
+    function listar($busca){
+        $msg = null;
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = "select * from funcionarios where nome like ? and statusFuncionario != 'Removido' order by nome";
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("s",$nome);
+        $nome = '%' . $busca . '%';
         $stmt->execute();
         if($stmt->error){
             $msg = $stmt->error;

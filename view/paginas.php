@@ -45,4 +45,7 @@ switch ($p) {
     case 'flis':
         include '../view/funcionario_listar.php';
         break;
+    case 'fed':
+        include '../view/funcionario_editar.php';
+        break;
 }

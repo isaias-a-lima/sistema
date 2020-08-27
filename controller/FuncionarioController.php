@@ -36,6 +36,38 @@ class FuncionarioController{
         
     }
 
+    public function editar($dto){
+        if(empty($dto->getNome())){
+            return 'Nome é obrigatório!';
+        }
+        if(empty($dto->getEmail())){
+            return 'E-mail é obrigatório!';
+        }
+        if(empty($dto->getFuncao())){
+            return 'Função é obrigatório!';
+        }        
+        if(empty($dto->getId())){
+            return 'Id é obrigatório!';
+        }
+        if(empty($dto->getStatusFuncionario())){
+            return 'Status é obrigatório!';
+        }
+        $funcDao = new FuncionarioDao();
+        $res = $funcDao->editar($dto);
+        if(is_string($res)){
+            return $res;            
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível editar os dados!</div>';
+            }else{
+                $retorno = '<div class="alert alert-danger">Dados editados com sucesso!</div>';
+                $retorno .= '<script>setTimeout(function(){window.location.href="../view/?p=flis"},2000);</script>';
+                return $retorno;
+            }
+        }
+    }
+
     public function alterarDados($dto){
         if(empty($dto->getNome())){
             return 'Nome é obrigatório!';
@@ -65,9 +97,20 @@ class FuncionarioController{
         }
     }
 
-    function listar(){
+    function remover($id){
         $funcDao = new FuncionarioDao();
-        $res = $funcDao->listar();
+        $res = $funcDao->remover($id);
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível remover!</div>';
+        }
+        $retorno = '<div class="alert alert-danger">Usuário removido com sucesso!</div>';
+        $retorno .= '<script>setTimeout(function(){window.location.href="../view/?p=flis"},2000);</script>';
+        return $retorno;
+    }
+
+    function listar($busca){
+        $funcDao = new FuncionarioDao();
+        $res = $funcDao->listar($busca);
         if(is_string($res)){            
             return '<div class="alert alert-danger">Não foi possível alterar os dados!</div>';
         }
@@ -81,7 +124,7 @@ class FuncionarioController{
         $funcDao = new FuncionarioDao();
         $res = $funcDao->selecionar($dto);
         if(is_string($res)){
-            return '<span class="alert alert-danger">ERRO: ' . $res . '</span>';
+            return '<div class="alert alert-danger">ERRO: ' . $res . '</div>';
         }
         $res = $res->fetch_array();
         return $res;
