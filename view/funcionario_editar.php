@@ -50,8 +50,6 @@ if (isset($_POST['id']) && isset($_POST['acao'])) {
         $senha = $res['senha'];
         $statusFuncionario = $res['statusFuncionario'];
     }
-} else {
-    $msg = 'Nenhum Usuário ou Acão selecionada!';
 }
 
 
