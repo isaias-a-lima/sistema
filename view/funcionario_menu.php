@@ -24,10 +24,10 @@
 
             <h4><span class="glyphicon glyphicon-briefcase"></span> Comissão</h4>
 
-            <button type="button" class="btn btn-danger">
+            <button id="btn_comin" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-plus"></span> Nova
             </button>
-            <button type="button" class="btn btn-danger">
+            <button id="btn_comlis" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-search"></span> Consultar
             </button>
             <button type="button" class="btn btn-danger">

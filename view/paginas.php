@@ -48,4 +48,13 @@ switch ($p) {
     case 'fed':
         include '../view/funcionario_editar.php';
         break;
+    case 'comin':
+        include '../view/comissao_incluir.php';
+        break;
+    case 'comlis':
+        include '../view/comissao_listar.php';
+        break;
+    case 'comed':
+        include '../view/comissao_editar.php';
+        break;
 }

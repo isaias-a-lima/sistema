@@ -37,7 +37,12 @@ if(is_array($res)){
 
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
+
         <h2><span class="glyphicon glyphicon-cog"></span> Usuário / Atualizar</h2>
+
+        <ul class="pager">
+            <li class="previous"><a href="../view/?p=lf">Voltar</a></li>
+        </ul>
         
         <div id="msg"></div>
         <?= $msg ?>

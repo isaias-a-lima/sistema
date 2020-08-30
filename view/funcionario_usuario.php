@@ -28,7 +28,13 @@ if (is_string($res)) {
 
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
+
         <h2><span class="glyphicon glyphicon-cog"></span> Usuário</h2>
+
+        <ul class="pager">
+            <li class="previous"><a href="../view/">Voltar</a></li>
+        </ul>
+        
         <?= $msg ?>
 
         <table class="table">
@@ -46,8 +52,8 @@ if (is_string($res)) {
             </tr>
         </table>
 
-        <button type="button" id="btn_fad" class="btn btn-default">Atualizar dados</button>
-        <button type="button" id="btn_fms" class="btn btn-default">Mudar senha</button>       
+        <button type="button" id="btn_fad" class="btn btn-danger">Atualizar dados</button>
+        <button type="button" id="btn_fms" class="btn btn-danger">Mudar senha</button>       
 
     </div>
 </div>

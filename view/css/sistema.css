@@ -15,8 +15,9 @@ h1,h2,h3,h4,h5{
 
 .menu{
     background:#ddd;
+    width: 98%;
     padding: 1%;
-    margin: 10px 1%;
+    margin: 10px 0;
     border-radius: 10px;
 }
 

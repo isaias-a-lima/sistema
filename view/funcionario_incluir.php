@@ -20,7 +20,13 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
+
         <h2><span class="glyphicon glyphicon-cog"></span> Novo Usuário</h2>
+
+        <ul class="pager">
+            <li class="previous"><a href="../view/?p=m">Voltar</a></li>
+        </ul>
+
         <?= $msg ?>
 
         <form method="post" accept-charset="utf-8">
