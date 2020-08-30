@@ -68,7 +68,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             </div>
 
             <div class="form-group">
-                <label>Tempo aproximado do frete (hh:mm)</label>
+                <label>Tempo aproximado do frete (minutos)</label>
                 <input type="number" name="tempoAproxFrete" id="tempoAproxFrete" class="form-control">
             </div>
 
