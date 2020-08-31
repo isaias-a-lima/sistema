@@ -49,7 +49,8 @@ if (is_string($res)) {
                         echo '<td>' . $row['faculdade'] . '</td>';
                         echo '<td>' . $row['curso'] . '</td>';
                         echo '<td>' . $row['status_projeto'] . '</td>';
-                        echo '<td><span class="glyphicon glyphicon-edit link" onclick="editar(' . $row['id'] . ')"></span>';
+                        echo '<td><span class="glyphicon glyphicon-eye-open link" onclick="visao(' . $row['id'] . ')"></span>';
+                        echo '<span class="glyphicon glyphicon-edit link" onclick="editar(' . $row['id'] . ')"></span>';
                         echo '<span class="glyphicon glyphicon-remove link" onclick="cancelar(' . $row['id'] . ')"></span></td>';
                         echo '</tr>';
                     }

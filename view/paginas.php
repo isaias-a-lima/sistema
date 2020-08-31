@@ -57,4 +57,7 @@ switch ($p) {
     case 'comed':
         include '../view/comissao_editar.php';
         break;
+    case 'comvis':
+        include '../view/comissao_visao.php';
+        break;
 }

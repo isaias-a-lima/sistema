@@ -39,3 +39,9 @@ function cancelar(id) {
         form_fed.submit();
     }    
 }
+
+//COMISSÃO | Visão
+function visao(id){
+    var id = id;
+    window.location.href="../view/?p=comvis&id="+id;
+}
