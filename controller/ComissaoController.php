@@ -4,27 +4,31 @@ namespace Controller;
 
 require_once '../interfaces/ComissaoCrud.php';
 require_once '../dao/ComissaoDao.php';
+require_once '../model/Comissao.php';
 
 use interfaces\ComissaoCrud;
 use dao\ComissaoDao;
+use model\Comissao;
 
 class ComissaoController implements ComissaoCrud{
 
     function incluir($dto){
 
-        if(empty($dto->getFaculdade())){
+        $comissao = new Comissao($dto);
+
+        if(empty($comissao->getFaculdade())){
             return '<div class="alert alert-danger">Faculdade é obrigatório!</div>';
         }
-        if(empty($dto->getCurso())){
+        if(empty($comissao->getCurso())){
             return '<div class="alert alert-danger">Curso é obrigatório!</div>';
-        }
-        if(!empty($dto->getValorProjeto())){
-            if(!is_numeric($dto->getValorProjeto())){
+        }        
+        if(!empty($comissao->getValorProjeto())){
+            if(!is_numeric($comissao->getValorProjeto())){
                 return '<div class="alert alert-danger">Valor do projeto tem que ser um número válido!</div>';
             }
         }
         $dao = new ComissaoDao();
-        $res = $dao->incluir($dto);
+        $res = $dao->incluir($comissao);
         if(is_string($res)){
             echo '<script>console.log('. $res .')</script>';
             return '<div class="alert alert-danger">ERRO: Não foi possível incluir Comissão!</div>';
@@ -40,22 +44,24 @@ class ComissaoController implements ComissaoCrud{
 
     function editar($dto){
 
-        if(empty($dto->getId())){
+        $comissao = new Comissao($dto);
+
+        if(empty($comissao->getId())){
             return '<div class="alert alert-danger">Id é obrigatório!</div>';
         }
-        if(empty($dto->getFaculdade())){
+        if(empty($comissao->getFaculdade())){
             return '<div class="alert alert-danger">Faculdade é obrigatório!</div>';
         }
-        if(empty($dto->getCurso())){
+        if(empty($comissao->getCurso())){
             return '<div class="alert alert-danger">Curso é obrigatório!</div>';
-        }
-        if(!empty($dto->getValorProjeto())){
-            if(!is_numeric($dto->getValorProjeto())){
+        }        
+        if(!empty($comissao->getValorProjeto())){
+            if(!is_numeric($comissao->getValorProjeto())){
                 return '<div class="alert alert-danger">Valor do projeto tem que ser um número válido!</div>';
             }
         }
         $dao = new ComissaoDao();
-        $res = $dao->editar($dto);
+        $res = $dao->editar($comissao);
         if(is_string($res)){
             echo '<script>console.log('. $res .')</script>';
             return '<div class="alert alert-danger">Erro de sistema!</div>';

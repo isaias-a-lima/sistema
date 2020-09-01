@@ -21,10 +21,10 @@ class ComissaoDto{
         $this->id = $dto['id'];
         $this->faculdade = isset($dto['faculdade']) ? $dto['faculdade'] : '';
         $this->curso = isset($dto['curso']) ? $dto['curso'] : '';
-        $this->dataFormatura = isset($dto['dataFormatura']) ? $dto['dataFormatura'] : '';
-        $this->dataInicioArte = isset($dto['dataInicioArte']) ? $dto['dataInicioArte'] : '';
-        $this->dataLimiteAprovacao = isset($dto['dataLimiteAprovacao']) ? $dto['dataLimiteAprovacao'] : '';
-        $this->dataPrevistaEntrega = isset($dto['dataPrevistaEntrega']) ? $dto['dataPrevistaEntrega'] : '';
+        $this->dataFormatura = (isset($dto['dataFormatura']) && !empty($dto['dataFormatura'])) ? $dto['dataFormatura'] : null;
+        $this->dataInicioArte = (isset($dto['dataInicioArte']) && !empty($dto['dataInicioArte'])) ? $dto['dataInicioArte'] : null;
+        $this->dataLimiteAprovacao = (isset($dto['dataLimiteAprovacao']) && !empty($dto['dataLimiteAprovacao'])) ? $dto['dataLimiteAprovacao'] : null;
+        $this->dataPrevistaEntrega = (isset($dto['dataPrevistaEntrega']) && !empty($dto['dataPrevistaEntrega'])) ? $dto['dataPrevistaEntrega'] : null;
         $this->enderecoEntrega = isset($dto['enderecoEntrega']) ? $dto['enderecoEntrega'] : '';
         $this->tempoAproxFrete = isset($dto['tempoAproxFrete']) ? $dto['tempoAproxFrete'] : '';
         $this->qtdInicialConvites = isset($dto['qtdInicialConvites']) ? $dto['qtdInicialConvites'] : '';

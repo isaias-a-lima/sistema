@@ -127,6 +127,54 @@ class Comissao{
     {
         return $this->valorProjeto;
     }
+
+    /**
+     * Set the value of dataFormatura
+     *
+     * @return  self
+     */ 
+    public function setDataFormatura($dataFormatura)
+    {
+        $this->dataFormatura = $dataFormatura;
+
+        return $this;
+    }
+
+    /**
+     * Set the value of dataInicioArte
+     *
+     * @return  self
+     */ 
+    public function setDataInicioArte($dataInicioArte)
+    {
+        $this->dataInicioArte = $dataInicioArte;
+
+        return $this;
+    }
+
+    /**
+     * Set the value of dataLimiteAprovacao
+     *
+     * @return  self
+     */ 
+    public function setDataLimiteAprovacao($dataLimiteAprovacao)
+    {
+        $this->dataLimiteAprovacao = $dataLimiteAprovacao;
+
+        return $this;
+    }
+
+    /**
+     * Set the value of dataPrevistaEntrega
+     *
+     * @return  self
+     */ 
+    public function setDataPrevistaEntrega($dataPrevistaEntrega)
+    {
+        $this->dataPrevistaEntrega = $dataPrevistaEntrega;
+
+        return $this;
+    }
 }
 
 ?>

@@ -97,7 +97,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
             </div>
 
             <p>
-                <button type="button" id="btn_comin" class="btn btn-danger">Salvar</button>
+                <button class="btn btn-danger">Salvar</button>
             </p>
 
         </form>

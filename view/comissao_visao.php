@@ -23,13 +23,21 @@ if (isset($_GET['id'])) {
         $faculdade = $res['faculdade'];
         $curso = $res['curso'];
         $dataFormatura = $res['data_formatura'];
-        $dataFormatura = date('d/m/Y', strtotime($dataFormatura));
+        if (!empty($dataFormatura)) {
+            $dataFormatura = date('d/m/Y', strtotime($dataFormatura));
+        }
         $dataInicioArte = $res['data_inicio_arte'];
-        $dataInicioArte = date('d/m/Y', strtotime($dataInicioArte));
+        if (!empty($dataInicioArte)) {
+            $dataInicioArte = date('d/m/Y', strtotime($dataInicioArte));
+        }
         $dataLimiteAprovacao = $res['data_limite_aprovacao'];
-        $dataLimiteAprovacao = date('d/m/Y', strtotime($dataLimiteAprovacao));
+        if (!empty($dataLimiteAprovacao)) {
+            $dataLimiteAprovacao = date('d/m/Y', strtotime($dataLimiteAprovacao));
+        }
         $dataPrevistaEntrega = $res['data_prevista_entrega'];
-        $dataPrevistaEntrega = date('d/m/Y', strtotime($dataPrevistaEntrega));
+        if (!empty($dataPrevistaEntrega)) {
+            $dataPrevistaEntrega = date('d/m/Y', strtotime($dataPrevistaEntrega));
+        }
         $enderecoEntrega = $res['endereco_entrega'];
         $tempoAproxFrete = $res['tempo_aprox_frete'];
         $tempoAproxFrete .= ' minutos';
@@ -126,11 +134,9 @@ if (isset($_GET['id'])) {
 
         <table class="table">
             <tr>
-                <th>Nome</th>
-                <th>Info</th>
-                <th>Msg</th>
-                <th>Fotos</th>
-                <th>Pgto</th>
+                <th style="width: 10%;">Código</th>
+                <th>Nome</th>                
+                <th>&nbsp;</th>
             </tr>
         </table>
 
