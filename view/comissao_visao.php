@@ -23,13 +23,13 @@ if (isset($_GET['id'])) {
         $faculdade = $res['faculdade'];
         $curso = $res['curso'];
         $dataFormatura = $res['data_formatura'];
-        $dataFormatura = date('d/m/Y',strtotime($dataFormatura));
+        $dataFormatura = date('d/m/Y', strtotime($dataFormatura));
         $dataInicioArte = $res['data_inicio_arte'];
-        $dataInicioArte = date('d/m/Y',strtotime($dataInicioArte));
+        $dataInicioArte = date('d/m/Y', strtotime($dataInicioArte));
         $dataLimiteAprovacao = $res['data_limite_aprovacao'];
-        $dataLimiteAprovacao = date('d/m/Y',strtotime($dataLimiteAprovacao));
+        $dataLimiteAprovacao = date('d/m/Y', strtotime($dataLimiteAprovacao));
         $dataPrevistaEntrega = $res['data_prevista_entrega'];
-        $dataPrevistaEntrega = date('d/m/Y',strtotime($dataPrevistaEntrega));
+        $dataPrevistaEntrega = date('d/m/Y', strtotime($dataPrevistaEntrega));
         $enderecoEntrega = $res['endereco_entrega'];
         $tempoAproxFrete = $res['tempo_aprox_frete'];
         $tempoAproxFrete .= ' minutos';
@@ -59,12 +59,12 @@ if (isset($_GET['id'])) {
 
         <h4>
             Dados da Comissão &nbsp;
-            <button class="btn btn-danger" onclick="editar(<?=$id?>)"><span class="glyphicon glyphicon-edit"></span> Editar</button>
+            <button class="btn btn-danger" onclick="editar(<?= $id ?>)"><span class="glyphicon glyphicon-edit"></span> Editar</button>
         </h4>
 
         <table class="table">
             <tr>
-                <th style="width: 25%;">ID</th>
+                <th style="width:50%">Código Comissão</th>
                 <td><?= $id ?></td>
             </tr>
             <tr>
@@ -75,50 +75,38 @@ if (isset($_GET['id'])) {
                 <th>Curso</th>
                 <td><?= $curso ?></td>
             </tr>
-        </table>
-        <table class="table">
             <tr>
                 <th>Data formatura</th>
-                <th>Data início da arte</th>
+                <td><?= $dataFormatura ?></td>
             </tr>
             <tr>
-
-                <td><?= $dataFormatura ?></td>
+                <th>Data início da arte</th>
                 <td><?= $dataInicioArte ?></td>
             </tr>
             <tr>
                 <th>Data limite aprovação</th>
-                <th>Data prevista entrega</th>
+                <td><?= $dataLimiteAprovacao ?></td>
             </tr>
             <tr>
-
-                <td><?= $dataLimiteAprovacao ?></td>
+                <th>Data prevista entrega</th>
                 <td><?= $dataPrevistaEntrega ?></td>
             </tr>
-        </table>
-        <table class="table">
             <tr>
                 <th colspan="2">Endereço de entrega</th>
             </tr>
             <tr>
                 <td colspan="2"><?= $enderecoEntrega ?></td>
             </tr>
-        </table>
-        <table class="table">
             <tr>
-                <th style="width: 50%;">Tempo aproximado do frete</th>
-                <th>&nbsp;</th>
-            </tr>
-            <tr>
+                <th>Tempo aproximado do frete</th>
                 <td><?= $tempoAproxFrete ?></td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <th>Qtd. inicial de convites</th>
-                <th>Valor do projeto</th>
+                <td><?= $qtdInicialConvites ?></td>
             </tr>
             <tr>
-                <td><?= $qtdInicialConvites ?></td>
+                <th>Valor do projeto</th>
                 <td><?= $valorProjeto ?></td>
             </tr>
             <tr>
@@ -128,7 +116,7 @@ if (isset($_GET['id'])) {
         </table>
 
     </div>
-<!-- ---------------------------------------------------------------------- -->
+    <!-- ---------------------------------------------------------------------- -->
     <div class="col-sm-6 col-md-6 col-lg-6" style="min-height: 350px;">
 
         <h4>
