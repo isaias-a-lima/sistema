@@ -33,3 +33,10 @@ function remover(id){
         }        
     }    
 }
+
+//Sistema | Incluir Usuário (Funcionário)
+var btn_fin = document.getElementById('btn_fin');
+btn_fin.addEventListener('click', incluirFuncionario);
+function incluirFuncionario(){
+    window.location.href='../view/?p=fin';
+}

@@ -68,6 +68,7 @@ if (isset($_GET['id'])) {
         <h4>
             Dados da Comissão &nbsp;
             <button class="btn btn-danger" onclick="editar(<?= $id ?>)"><span class="glyphicon glyphicon-edit"></span> Editar</button>
+            <button class="btn btn-danger" onclick="cancelar(<?= $id ?>)"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
         </h4>
 
         <table class="table">

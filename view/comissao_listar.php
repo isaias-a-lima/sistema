@@ -26,11 +26,17 @@ if (is_string($res)) {
 
         <?= $msg ?>
 
+        <button id="btn_comin" class="btn btn-danger">
+            <span class="glyphicon glyphicon-plus"></span>
+            Nova
+        </button>
 
-        <div class="input-group col-sm-6">
-            <input id="busca" type="search" class="form-control" name="busca" placeholder="Busca por Id, Faculdade ou Curso">
-            <span id="btn_busca" class="input-group-addon link"><i class="glyphicon glyphicon-search"></i></span>
-        </div>
+        <p>
+            <div class="input-group col-sm-6">
+                <input id="busca" type="search" class="form-control" name="busca" placeholder="Busca por Id, Faculdade ou Curso">
+                <span id="btn_busca" class="input-group-addon link"><i class="glyphicon glyphicon-search"></i></span>
+            </div>
+        </p>
 
         <div class="table-responsive">
             <table class="table table-hover">

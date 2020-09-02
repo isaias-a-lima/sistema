@@ -45,3 +45,10 @@ function visao(id){
     var id = id;
     window.location.href="../view/?p=comvis&id="+id;
 }
+
+//Comissão | Incluir
+var btn_comin = document.getElementById('btn_comin');
+btn_comin.addEventListener('click', incluirComissao);
+function incluirComissao(){
+    window.location.href='../view/?p=comin';
+}
