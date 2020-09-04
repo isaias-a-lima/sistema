@@ -1,6 +1,7 @@
 <?php
 
 use Controller\ComissaoController;
+use dao\IntegranteController;
 
 require_once '../controller/ComissaoController.php';
 
@@ -10,11 +11,13 @@ $id = $faculdade = $curso = $dataFormatura = $dataInicioArte = $dataLimiteAprova
 $dataPrevistaEntrega = $enderecoEntrega = $tempoAproxFrete = $qtdInicialConvites = '';
 $valorProjeto = $statusProjeto = '';
 
-if (isset($_GET['id'])) {
+if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_GET['ic'])) {
+
+    $idComissao = isset($_GET['id']) ? $_GET['id'] : $_GET['ic'];
 
     $comissao = new ComissaoController();
 
-    $res = $comissao->selecionar($_GET['id']);
+    $res = $comissao->selecionar($idComissao);
     if (is_string($res)) {
         $msg = $res;
     }
@@ -46,6 +49,9 @@ if (isset($_GET['id'])) {
         $valorProjeto = 'R$ ' . $valorProjeto;
         $statusProjeto = $res['status_projeto'];
     }
+}else{    
+    $msg = '<div class="alert alert-danger">Nenhuma comissão foi selecionada!</div>';
+    echo '<script>setTimeout(function(){window.location.href="../view/?p=comlis"},2000)</script>';
 }
 ?>
 
@@ -125,12 +131,30 @@ if (isset($_GET['id'])) {
         </table>
 
     </div>
-    <!-- ---------------------------------------------------------------------- -->
+
+    <!-- FORMANDOS ---------------------------------------------------------------------- -->
+
+    <?php
+    require_once '../controller/IntegranteController.php';
+
+    $msg2 = '';
+
+    empty($id) ? $id = 0 : false ;
+    
+    $integrante = new IntegranteController();
+    $res2 = $integrante->listar($id);
+    if(is_string($res2)){
+        $msg2 = $res;
+    }
+
+
+    ?>
     <div class="col-sm-6 col-md-6 col-lg-6" style="min-height: 350px;">
 
         <h4>
             Formandos &nbsp;
-            <button class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> Novo</button>
+            <button id="btn_iin" class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> Novo</button>
+            <input type="hidden" id="idComissao" value="<?=$id?>">
         </h4>
 
         <table class="table">
@@ -139,6 +163,21 @@ if (isset($_GET['id'])) {
                 <th>Nome</th>                
                 <th>&nbsp;</th>
             </tr>
+            <?php
+            if(is_array($res2) || is_object($res2)){
+                while($row2 = $res2->fetch_assoc()){
+                    echo '<tr>';
+                    echo '<td>'. $row2['id'] .'</td>';
+                    echo '<td>'. $row2['nome'] .'</td>';
+                    echo '<td>';
+                    echo '<span class="glyphicon glyphicon-eye-open link"></span>';
+                    echo '<span class="glyphicon glyphicon-edit link"></span>';
+                    echo '<span class="glyphicon glyphicon-remove link"></span>';
+                    echo '</td>';
+                    echo '</tr>';
+                }
+            }
+            ?>
         </table>
 
     </div>

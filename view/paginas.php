@@ -60,4 +60,7 @@ switch ($p) {
     case 'comvis':
         include '../view/comissao_visao.php';
         break;
+    case 'iin':
+        include '../view/integrante_incluir.php';
+        break;
 }

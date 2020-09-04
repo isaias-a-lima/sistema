@@ -112,7 +112,7 @@ class FuncionarioController{
         $funcDao = new FuncionarioDao();
         $res = $funcDao->listar($busca);
         if(is_string($res)){            
-            return '<div class="alert alert-danger">Não foi possível alterar os dados!</div>';
+            return '<div class="alert alert-danger">Não foi possível listar os Usuários!</div>';
         }
         return $res;
     }

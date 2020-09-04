@@ -25,3 +25,11 @@ function cancelar(id) {
         }
     }
 }
+
+//INTEGRANTES | INCLUIR
+var btn_iin = document.getElementById('btn_iin');
+btn_iin.addEventListener('click', incluirIntegrante);
+function incluirIntegrante(){
+    var idComissao = document.getElementById('idComissao').value;
+    window.location.href='../view/?p=iin&t=comvis&ic='+idComissao;
+}
