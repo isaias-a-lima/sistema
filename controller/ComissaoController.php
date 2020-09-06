@@ -70,8 +70,7 @@ class ComissaoController implements ComissaoCrud{
             if($res < 1){
                 return '<div class="alert alert-danger">Não foi possível editar Comissão!</div>';
             }
-            echo '<script>setTimeout(function(){window.location.href="../view/?p=comlis"},2000)</script>';
-            return '<div class="alert alert-danger">Comissão editada com sucesso!</div>';
+            return $comissao->getId();
         }
     }
 

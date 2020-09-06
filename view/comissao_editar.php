@@ -19,6 +19,10 @@ if (isset($_POST['faculdade'])) {
     if (is_string($res)) {
         $msg = $res;
     }
+    if(is_numeric($res)){
+        $msg = '<div class="alert alert-danger">Comissão editada com sucesso!</div>';
+        echo '<script>setTimeout(function(){window.location.href="../view/?p=comvis&ic='.$idComissao.'"},2000);</script>';
+    }
 }
 
 $id = $faculdade = $curso = $dataFormatura = $dataInicioArte = $dataLimiteAprovacao = '';
