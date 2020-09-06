@@ -4,11 +4,17 @@ use Controller\ComissaoController;
 
 $msg = '';
 $busca = isset($_GET['busca']) ? $_GET['busca'] : '';
+$statusProjeto = isset($_GET['st']) ? $_GET['st'] : 'Planejamento';
 
 require_once '../controller/ComissaoController.php';
 
 $controller = new ComissaoController();
-$res = $controller->listar($busca);
+/* if(strlen($statusProjeto) > 0){
+    $res = $controller->listByStatus($statusProjeto);
+}else{ */
+    $res = $controller->listar($busca, $statusProjeto);
+/* } */
+
 if (is_string($res)) {
     $msg = $res;
 }
@@ -16,7 +22,7 @@ if (is_string($res)) {
 ?>
 
 <div class="row">
-    <div class="col-sm-12 col-md-12 col-lg-8" style="min-height: 400px;">
+    <div class="col-sm-12 col-md-12 col-lg-8">
 
         <h2><span class="glyphicon glyphicon-briefcase"></span> Comissões</h2>
 
@@ -26,17 +32,46 @@ if (is_string($res)) {
 
         <?= $msg ?>
 
-        <button id="btn_comin" class="btn btn-danger">
-            <span class="glyphicon glyphicon-plus"></span>
-            Nova
-        </button>
+        <button id="btn_comin" class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> Nova</button>
 
-        <p>
-            <div class="input-group col-sm-6">
+    </div>
+</div>
+<p>
+    <div class="row">
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+
+            <div class="input-group">
                 <input id="busca" type="search" class="form-control" name="busca" placeholder="Busca por Id, Faculdade ou Curso">
                 <span id="btn_busca" class="input-group-addon link"><i class="glyphicon glyphicon-search"></i></span>
             </div>
-        </p>
+
+        </div>
+
+        <div class="col-sm-6 col-md-4 col-lg-4">
+
+            <div class="input-group">
+                <select id="opcao_busca" name="opcao_busca" class="form-control">
+                    <option value="<?=$statusProjeto?>"><?=$statusProjeto?></option>
+                    <option value="Planejamento">Planejamento</option>
+                    <option value="Financeiro">Financeiro</option>
+                    <option value="Pendência">Pendência</option>
+                    <option value="Criação">Criação</option>
+                    <option value="Impressão">Impressão</option>
+                    <option value="Acabamento">Acabamento</option>
+                    <option value="Expedição">Expedição</option>
+                    <option value="Entregue">Entregue</option>
+                    <option value="Cancelado">Cancelado</option>
+                </select>
+                <span id="btn_opcao" class="input-group-addon link"><i class="glyphicon glyphicon-list"></i></span>
+            </div>
+
+        </div>
+    </div>
+</p>
+
+<div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-8" style="min-height: 400px;">
 
         <div class="table-responsive">
             <table class="table table-hover">

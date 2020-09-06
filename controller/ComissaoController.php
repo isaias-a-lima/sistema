@@ -96,9 +96,9 @@ class ComissaoController implements ComissaoCrud{
         }
     }
 
-    function listar($busca){        
+    function listar($busca, $statusProjeto){        
         $dao = new ComissaoDao();
-        $res = $dao->listar($busca);
+        $res = $dao->listar($busca, $statusProjeto);
         if(is_string($res)){
             echo '<script>console.log('. $res .')</script>';
             return '<div class="alert alert-danger">ERRO: Não foi possível consultar Comissões!</div>';
@@ -120,6 +120,21 @@ class ComissaoController implements ComissaoCrud{
         if(is_array($res) || is_object($res)){
             $row = $res->fetch_array();
             return $row;
+        }
+    }
+
+    function listByStatus($statusProjeto){
+        if(empty($statusProjeto)){
+            return 'Nenhum status selecionado para pesquisa!';
+        }
+        $dao = new ComissaoDao();
+        $res = $dao->listByStatus($statusProjeto);
+        if(is_string($res)){
+            echo '<script>console.log('. $res .')</script>';
+            return '<div class="alert alert-danger">ERRO: Não foi possível consultar Comissões!</div>';
+        }
+        if(is_array($res) || is_object($res)){
+            return $res;
         }
     }
 

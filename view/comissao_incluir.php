@@ -4,6 +4,7 @@ use Controller\ComissaoController;
 use dto\ComissaoDto;
 
 $msg = '';
+$urlRetorno = isset($_GET['t']) ? $_GET['t'] : 'm';
 
 require_once '../dto/ComissaoDto.php';
 require_once '../controller/ComissaoController.php';
@@ -23,7 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
         <h2><span class="glyphicon glyphicon-briefcase"></span> Nova Comissão</h2>
 
         <ul class="pager">
-            <li class="previous"><a href="../view/?p=m">Voltar</a></li>
+            <li class="previous"><a href="../view/?p=<?=$urlRetorno?>">Voltar</a></li>
         </ul>
 
         <?= $msg ?>

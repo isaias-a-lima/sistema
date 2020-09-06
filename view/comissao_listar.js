@@ -10,7 +10,10 @@ busca.addEventListener('keydown', function (event) {
 })
 function buscarComissões() {
     var keyWord = busca.value;
-    window.location.href = '../view/?p=comlis&busca=' + keyWord;
+    var opcao_busca = document.getElementById('opcao_busca').value;
+    var parametros = '&busca=' + keyWord;
+    parametros += '&st=' + opcao_busca;
+    window.location.href = '../view/?p=comlis' + parametros;
 }
 
 //COMISSÃO | Editar
@@ -50,5 +53,13 @@ function visao(id){
 var btn_comin = document.getElementById('btn_comin');
 btn_comin.addEventListener('click', incluirComissao);
 function incluirComissao(){
-    window.location.href='../view/?p=comin';
+    window.location.href='../view/?p=comin&t=comlis';
+}
+
+var opcao_busca = document.getElementById('opcao_busca');
+var btn_opcao = document.getElementById('btn_opcao');
+btn_opcao.addEventListener('click', listByStatus);
+function listByStatus(){
+    var status = opcao_busca.value;
+    window.location.href = '../view/?p=comlis&st=' + status;
 }

@@ -186,5 +186,6 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
 <form id="form_comvis" method="post" action="../view/?p=comed">
     <input type="hidden" name="id" id="id">
     <input type="hidden" name="acao" id="acao">
+    <input type="hidden" name="t" id="t" value="comvis">
 </form>
 <script src="../view/comissao_visao.js"></script>

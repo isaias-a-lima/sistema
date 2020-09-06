@@ -5,6 +5,9 @@ use dto\ComissaoDto;
 
 $msg = '';
 
+$urlRetorno = isset($_POST['t']) ? $_POST['t'] : 'comlis';
+$idComissao = isset($_POST['id']) ? $_POST['id'] : 0 ;
+
 require_once '../controller/ComissaoController.php';
 require_once '../dto/ComissaoDto.php';
 
@@ -59,7 +62,7 @@ if (isset($_POST['id']) && isset($_POST['acao'])) {
         <h2><span class="glyphicon glyphicon-briefcase"></span> Editar Comissão</h2>
 
         <ul class="pager">
-            <li class="previous"><a href="../view/?p=comlis">Voltar</a></li>
+            <li class="previous"><a href="../view/?p=<?=$urlRetorno?>&ic=<?=$idComissao?>">Voltar</a></li>
         </ul>
 
         <?= $msg ?>

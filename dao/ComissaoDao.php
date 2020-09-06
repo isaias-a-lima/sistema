@@ -115,15 +115,15 @@ class ComissaoDao implements ComissaoCrud{
         return $msg;
     }
 
-    function listar($busca){
+    function listar($busca,$statusProjeto){
         $msg = null;        
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = 'select * from comissoes where id = ? and status_projeto != "Cancelado" ';       
-        $sql .= 'or faculdade like ? and status_projeto != "Cancelado" ';
-        $sql .= 'or curso like ? and status_projeto != "Cancelado"';
+        $sql = 'select * from comissoes where id = ? ';       
+        $sql .= 'or faculdade like ? and status_projeto = ? ';
+        $sql .= 'or curso like ? and status_projeto = ?';
         $stmt = $link->prepare($sql);        
-        $stmt->bind_param("iss", $id, $faculdade, $curso);
+        $stmt->bind_param("issss", $id, $faculdade, $statusProjeto,  $curso, $statusProjeto);
         $id = $busca;
         $faculdade = $curso = '%' . $busca . '%';
         $stmt->execute();
@@ -146,6 +146,27 @@ class ComissaoDao implements ComissaoCrud{
         
         $stmt = $link->prepare($sql);        
         $stmt->bind_param("i",$id);
+
+        $stmt->execute();
+
+        if($stmt->error){
+            $msg = $sql . '<br>' . $stmt->error;
+        }else{
+            $msg = $stmt->get_result();
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
+
+    function listByStatus($statusProjeto){
+        $msg = null;        
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = 'select * from comissoes where status_projeto = ?';       
+        
+        $stmt = $link->prepare($sql);        
+        $stmt->bind_param("s",$statusProjeto);
 
         $stmt->execute();
 
