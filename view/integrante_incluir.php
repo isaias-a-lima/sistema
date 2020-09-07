@@ -67,7 +67,7 @@ if(isset($_POST['nome'])){
 
             <div class="form-group">
                 <label for="senha">Senha</label>
-                <input type="text" name="senha" id="senha" value="1234" readonly class="form-control" required>
+                <input type="text" name="senha" id="senha" readonly class="form-control" required>
             </div>
 
             <div class="form-group">
@@ -88,3 +88,4 @@ if(isset($_POST['nome'])){
 
     </div>
 </div>
+<script src="../view/integrante_incluir.js"></script>

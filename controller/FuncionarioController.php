@@ -144,8 +144,7 @@ class FuncionarioController{
         if(is_array($res) || is_object($res)){
 
             $row = $res->fetch_array();
-            if(!empty($row['nome'])){
-                session_start();
+            if(!empty($row['nome'])){                
                 $_SESSION['idSession'] = $row['id'];
                 $_SESSION['nomeSession'] = $row['nome'];
                 $_SESSION['emailSession'] = $row['email'];
