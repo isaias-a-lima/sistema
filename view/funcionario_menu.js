@@ -1,9 +1,4 @@
-//Sistema | Incluir Usuário (Funcionário)
-var btn_fin = document.getElementById('btn_fin');
-btn_fin.addEventListener('click', incluirFuncionario);
-function incluirFuncionario(){
-    window.location.href='../view/?p=fin';
-}
+
 // Sistema | Consultar Usuários (Funcionários)
 var btn_flis = document.getElementById('btn_flis');
 btn_flis.addEventListener('click', listarFuncionarios);
@@ -23,3 +18,14 @@ btn_comlis.addEventListener('click',listarComissoes);
 function listarComissoes(){
     window.location.href='../view/?p=comlis';
 }
+
+//Empresa | Visualizar
+var btn_em = document.getElementById('btn_em');
+btn_em.addEventListener('click', function(){
+    window.location.href='../view/?p=em';
+});
+
+var btn_ilis = document.getElementById('btn_ilis');
+btn_ilis.addEventListener('click',function(){
+    window.location.href='../view/?p=ilis';
+});

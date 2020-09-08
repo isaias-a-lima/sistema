@@ -76,7 +76,25 @@ class IntegranteDao implements IntegranteCrud{
         return $msg;
     }
 
-    function selecionar($id){}
+    function selecionar($id){
+        $msg = null;
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = "select * from integrantes where id = ?";
+
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("i", $id);
+
+        $stmt->execute();
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->get_result();
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
 }
 
 ?>

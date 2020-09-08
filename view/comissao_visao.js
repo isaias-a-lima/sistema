@@ -33,3 +33,11 @@ function incluirIntegrante(){
     var idComissao = document.getElementById('idComissao').value;
     window.location.href='../view/?p=iin&t=comvis&ic='+idComissao;
 }
+
+function exibirIntegrante(id,idComissao){
+    var id = id;
+    var idComissao = idComissao;
+    var url = '../view/?p=ivis&id=' + id;
+    url += '&ic=' + idComissao;
+    window.location.href = url;
+}

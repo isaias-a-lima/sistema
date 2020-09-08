@@ -1,6 +1,6 @@
 <?php
 
-namespace dao;
+namespace controller;
 
 require_once '../interfaces/IntegranteCrud.php';
 require_once '../model/Integrante.php';
@@ -10,6 +10,7 @@ require_once '../util/Email.php';
 use interfaces\IntegranteCrud;
 use model\Integrante;
 use util\Email;
+use dao\IntegranteDao;
 
 class IntegranteController implements IntegranteCrud{
 
@@ -36,7 +37,7 @@ class IntegranteController implements IntegranteCrud{
         if(is_numeric($res)){
             $email = new Email();
             $resEmail = $email->emailCadastroIntegrante($dto->getEmail(),$dto->getNome(),$dto->getSenha(),'Formaprit');
-            echo "<script>alert('$resEmail')</script>";
+            //echo "<script>alert('$resEmail')</script>";
             return $res;
         }
     }
@@ -54,5 +55,13 @@ class IntegranteController implements IntegranteCrud{
         return $res;
     }
 
-    function selecionar($id){}
+    function selecionar($id){
+        $dao = new IntegranteDao();
+        $res = $dao->selecionar($id);
+        if(is_string($res)){
+            return '<div class="alert alert-danger">ERRO: ' . $res . '</div>';
+        }
+        $res = $res->fetch_array();
+        return $res;
+    }
 }

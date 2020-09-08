@@ -2,7 +2,7 @@
     <div class="col-sm-12 col-md-12" style="min-height: 400px;">
         <h2><span class="glyphicon glyphicon-menu-hamburger"></span> Menu</h2>
 
-        <div class="menu">
+        <div class="menu" style="display: none;">
             <h4><span class="glyphicon glyphicon-tasks"></span> Minhas Tarefas</h4>
 
             <button type="button" class="btn btn-danger">
@@ -30,13 +30,13 @@
             <button id="btn_comlis" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-search"></span> Consultar
             </button>
-            <button type="button" class="btn btn-danger">
+            <button id="btn_ilis" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-education"></span> Formandos
             </button>
             <button type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-usd"></span> Pagamentos
             </button>
-            <button type="button" class="btn btn-danger">
+            <button type="button" class="btn btn-danger" style="display: none;">
                 <span class="glyphicon glyphicon-tasks"></span> Tarefas
             </button>
 
@@ -46,12 +46,13 @@
 
             <h4><span class="glyphicon glyphicon-wrench"></span> Sistema</h4>
 
-            <button id="btn_fin" type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-plus"></span> Novo usuário
-            </button>
             <button id="btn_flis" type="button" class="btn btn-danger">
-                <span class="glyphicon glyphicon-search"></span> Consultar usuários
-            </button>         
+                <span class="glyphicon glyphicon-user"></span> Usuários
+            </button>
+
+            <button id="btn_em" type="button" class="btn btn-danger">
+                <span class="glyphicon glyphicon-flag"></span> Empresa
+            </button>
 
         </div>
     </div>

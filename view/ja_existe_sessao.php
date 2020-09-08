@@ -1,7 +1,7 @@
 <?php
 $msg='';
 if($_GET['p'] == 'l'){
-    $msg = '<h2><span class="glyphicon glyphicon-user"></span> Área do formando</h2>';
+    $msg = '<h2><span class="glyphicon glyphicon-education"></span> Área do formando</h2>';
 }else{
     $msg = '<h2><span class="glyphicon glyphicon-cog"></span> Área administrativa</h2>';
 }

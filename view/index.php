@@ -9,17 +9,17 @@
     <?php include 'estilos.php'; ?>
 </head>
 
-<body>  
-
+<body>
+    
     <header class="topo">
         <div class="container" style="height: 100%;">
             <div class="row" style="height: 100%;">
                 <div class="col-xs-5 col-sm-4 col-md-3" style="height: 100%;">
-                    <img src="./img/logo.png" style="height: 100%;">
+                    <img src="./img/logo.png" style="height: 100%; cursor:pointer;" onclick="window.location.href='../view/'">
                 </div>
                 <div class="col-xs-7 col-sm-8 col-md-9" style="text-align: center;">
                     <a href="../view/?p=m"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
-                    <a href="../view/?p=l"><span class="glyphicon glyphicon-user"></span></a>
+                    <a href="../view/?p=l"><span class="glyphicon glyphicon-education"></span></a>
                     <a href="../view/?p=lf"><span class="glyphicon glyphicon-cog"></span></a>
                 </div>
             </div>

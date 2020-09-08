@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace controller;
 
 require_once '../dao/FuncionarioDao.php';
 

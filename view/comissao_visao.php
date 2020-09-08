@@ -1,7 +1,7 @@
 <?php
 
-use Controller\ComissaoController;
-use dao\IntegranteController;
+use controller\ComissaoController;
+use controller\IntegranteController;
 
 require_once '../controller/ComissaoController.php';
 
@@ -79,7 +79,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
 
         <table class="table">
             <tr>
-                <th style="width:50%">Código Comissão</th>
+                <th style="width:50%">Id Comissão</th>
                 <td><?= $id ?></td>
             </tr>
             <tr>
@@ -144,12 +144,14 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
     $integrante = new IntegranteController();
     $res2 = $integrante->listar($id);
     if(is_string($res2)){
-        $msg2 = $res;
+        $msg2 = $res2;
     }
 
 
     ?>
     <div class="col-sm-6 col-md-6 col-lg-6" style="min-height: 350px;">
+
+        <?= $msg2 ?>
 
         <h4>
             Formandos &nbsp;
@@ -159,7 +161,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
 
         <table class="table">
             <tr>
-                <th style="width: 10%;">Código</th>
+                <th style="width: 10%;">Id</th>
                 <th>Nome</th>                
                 <th>&nbsp;</th>
             </tr>
@@ -170,7 +172,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
                     echo '<td>'. $row2['id'] .'</td>';
                     echo '<td>'. $row2['nome'] .'</td>';
                     echo '<td>';
-                    echo '<span class="glyphicon glyphicon-eye-open link"></span>';
+                    echo '<span class="glyphicon glyphicon-eye-open link" onclick="exibirIntegrante('.$row2['id'].','.$idComissao.')"></span>';
                     echo '<span class="glyphicon glyphicon-edit link"></span>';
                     echo '<span class="glyphicon glyphicon-remove link"></span>';
                     echo '</td>';

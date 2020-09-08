@@ -1,6 +1,6 @@
 <?php
 
-namespace Controller;
+namespace controller;
 
 require_once '../interfaces/ComissaoCrud.php';
 require_once '../dao/ComissaoDao.php';

@@ -6,7 +6,7 @@ $msg = '';
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
 
-        <h2><span class="glyphicon glyphicon-user"></span> Área do formando</h2>
+        <h2><span class="glyphicon glyphicon-education"></span> Área do formando</h2>
 
         <?=$msg?>        
 

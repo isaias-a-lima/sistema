@@ -5,7 +5,7 @@ if (!empty($_GET['p'])) {
 } else if (!empty($_POST['p'])) {
     $p = $_POST['p'];
 } else {
-    $p = '';
+    $p = 'h';
 }
 
 switch ($p) {
@@ -62,5 +62,20 @@ switch ($p) {
         break;
     case 'iin':
         include '../view/integrante_incluir.php';
+        break;
+    case 'em':
+        include '../view/empresa.php';
+        break;
+    case 'emed':
+        include '../view/empresa_editar.php';
+        break;
+    case 'ivis':
+        include '../view/integrante_visao.php';
+        break;
+    case 'ilis':
+        include '../view/integrante_listar.php';
+        break;
+    default:
+        include '../view/home.php';
         break;
 }
