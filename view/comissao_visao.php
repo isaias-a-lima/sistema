@@ -173,7 +173,7 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
                     echo '<td>'. $row2['nome'] .'</td>';
                     echo '<td>';
                     echo '<span class="glyphicon glyphicon-eye-open link" onclick="exibirIntegrante('.$row2['id'].','.$idComissao.')"></span>';
-                    echo '<span class="glyphicon glyphicon-edit link"></span>';
+                    echo '<span class="glyphicon glyphicon-edit link" onclick="editarIntegrante('.$row2['id'].','.$idComissao.')"></span>';
                     echo '<span class="glyphicon glyphicon-remove link"></span>';
                     echo '</td>';
                     echo '</tr>';

@@ -33,6 +33,8 @@ $integrante = new IntegranteController();
                 <span class="glyphicon glyphicon-edit"></span>
                 Editar
             </button>
+            <input type="hidden" id="idIntegrante" value="<?=$idIntegrante?>">
+            <input type="hidden" id="idComissao" value="<?=$idComissao?>">
         </p>
 
         <table class="table">
@@ -94,3 +96,4 @@ $integrante = new IntegranteController();
 
     </div>
 </div>
+<script src="../view/integrante_visao.js"></script>

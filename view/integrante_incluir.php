@@ -27,7 +27,7 @@ if (isset($_POST['nome'])) {
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
 
-        <h2><span class="glyphicon glyphicon-briefcase"></span> Novo Integrante da Comissão</h2>
+        <h2><span class="glyphicon glyphicon-briefcase"></span> Novo Formando</h2>
 
         <ul class="pager">
             <li class="previous"><a href="../view/?p=<?= $urlRetorno ?>&ic=<?= $idComissao ?>">Voltar</a></li>

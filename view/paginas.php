@@ -75,6 +75,9 @@ switch ($p) {
     case 'ilis':
         include '../view/integrante_listar.php';
         break;
+    case 'ied':
+        include '../view/integrante_editar.php';
+        break;
     default:
         include '../view/home.php';
         break;

@@ -2,6 +2,10 @@
 
 namespace util;
 
+use controller\EmpresaController;
+
+require_once '../controller/EmpresaController.php';
+
 class Email{
 
     /**
@@ -29,51 +33,61 @@ class Email{
         </head>
         <body>
         <h2>$assunto</h2>
-        <p>
+        <div>
         $mensagem
-        </p>
+        </div>
         </body>
         </html>
         ";
 
         if(empty($de)){
-            return '<div class="alert alert-danger">O campo \"de\" é obrigatório!</div>';
+            return 'O campo "de" é obrigatório!';
         }
         if(empty($para)){
-            return '<div class="alert alert-danger">O campo \"para\" é obrigatório!</div>';
+            return 'O campo "para" é obrigatório!';
         }
         if(empty($assunto)){
-            return '<div class="alert alert-danger">O campo \"assunto\" é obrigatório!</div>';
+            return 'O campo "assunto" é obrigatório!';
         }
         if(empty($mensagem)){
-            return '<div class="alert alert-danger">O campo \"mensagem\" é obrigatório!</div>';
+            return 'O campo "mensagem" é obrigatório!';
         }
 
         if(mail($para, $assunto, $mensagem, $headers)){
-            return '<div class="alert alert-danger">' . $msgSucesso . '</div>';
+            return $msgSucesso;
         }else{
-            return '<div class="alert alert-danger">' . $msgErro . '</div>';
+            return $msgErro;
         }
     }
 
     public function emailCadastroIntegrante($para, $nome, $senha,$assinatura){
+        $empresa = EmpresaController::exibirEmpresa();
+        $urlSistema = $empresa->getUrlSistema();
         $de = 'contato@ikdesigns.com.br';
         $cc = '';
         $assunto = 'Cadastro de integrante da comissão';
-        $msgSucesso = 'E-mail informativo enviado com sucesso!';
+        $msgSucesso = 'E-mail informativo enviado ao formando!';
         $msgErro = 'Não foi possível enviar o e-mail!';
         $mensagem = "
-        Olá $nome!
-        <br>
-        <br>
+        <p>
+        Olá $nome!        
         Você foi cadastrado(a) como integrante de uma comissão.
-        <br>
-        <br>
-        Utilize seu e-mail e a senha '$senha' para acessar o sistema.
-        <br>
-        <br>
+        </p>
+        <p>
+        <b>Dados de acesso ao sistema</b>
+        <dl>
+        <dt>Login</dt>
+        <dd>Seu e-mail cadastrado</dd>
+        <dt>Senha</dt>
+        <dd>$senha</dd>
+        <dt>Link de acesso ao sistema</dt>
+        <dd><a href='$urlSistema'>link</a></dd>
+        </dl>
+        </p>
+        <p>
         Atenciosamente,<br>
         $assinatura
+        </p>
         ";
         $res = $this->enviarEmail($de, $para, $cc, $assunto, $mensagem, $msgSucesso, $msgErro);
         return $res;

@@ -10,6 +10,7 @@ class Empresa
     private $emailFinanceiro;
     private $endereco;
     private $cnpj;
+    private $urlSistema;
 
     public function __construct()
     {
@@ -55,6 +56,13 @@ class Empresa
             $this->cnpj = fread($file, filesize($pathFile));
             fclose($file);
         }
+
+        $pathFile = '../config/empresaUrlSistema.txt';
+        if (filesize($pathFile) > 0) {
+            $file = fopen($pathFile, 'r');
+            $this->urlSistema = fread($file, filesize($pathFile));
+            fclose($file);
+        }
     }
 
     public function getNome()
@@ -85,6 +93,11 @@ class Empresa
     public function getCnpj()
     {
         return $this->cnpj;
+    }
+
+    public function getUrlSistema()
+    {
+        return $this->urlSistema;
     }
 
     public function setNome($nome)
@@ -157,6 +170,19 @@ class Empresa
             return 1;
         } else {
             return 'Não foi possível alterar o cnpj!';
+        }
+    }
+
+    public function setUrlSistema($urlSistema)
+    {
+        $file = fopen('../config/empresaUrlSistema.txt', 'w');
+        $res = fwrite($file, $urlSistema);
+        fclose($file);
+        if (is_numeric($res)) {
+            $this->urlSistema = $urlSistema;
+            return 1;
+        } else {
+            return 'Não foi possível alterar o url do sistema!';
         }
     }
 }

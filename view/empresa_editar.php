@@ -62,6 +62,11 @@ $empresa = EmpresaController::exibirEmpresa();
                     <input type="text" name="cnpj" required class="form-control" value="<?= $empresa->getCnpj() ?>">
                 </div>
 
+                <div class="form-group">
+                    <label>URL Sistema</label>
+                    <input type="text" name="urlSistema" required class="form-control" value="<?= $empresa->getUrlSistema() ?>">
+                </div>
+
                 <button class="btn btn-danger">Salvar</button>
             </form>
         </p>

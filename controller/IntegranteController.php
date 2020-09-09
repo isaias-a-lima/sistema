@@ -37,12 +37,36 @@ class IntegranteController implements IntegranteCrud{
         if(is_numeric($res)){
             $email = new Email();
             $resEmail = $email->emailCadastroIntegrante($dto->getEmail(),$dto->getNome(),$dto->getSenha(),'Formaprit');
-            //echo "<script>alert('$resEmail')</script>";
+            echo "<script>alert('$resEmail')</script>";
             return $res;
         }
     }
 
-    function editar($dto){}
+    function editar($dto){
+        if(empty($dto->getNome())){
+            return 'Nome é obrigatório!';
+        }
+        if(empty($dto->getEmail())){
+            return 'E-mail é obrigatório!';
+        }
+        if(empty($dto->getFuncao())){
+            return 'Função é obrigatório!';
+        }        
+        if(empty($dto->getId())){
+            return 'Id é obrigatório!';
+        }
+        $dao = new IntegranteDao();
+        $res = $dao->editar($dto);
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível editar Formando!</div>';
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível editar os dados!</div>';
+            }
+            return $res;
+        }
+    }
 
     function remover($id){}
 

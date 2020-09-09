@@ -49,7 +49,41 @@ class IntegranteDao implements IntegranteCrud{
         return $msg;
     }
 
-    function editar($dto){}
+    function editar($dto){
+        $msg = null;       
+        $integrante = new Integrante($dto);
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = 'update integrantes set nome=?,telefone=?,email=?,funcao=?,informacoes_convite=?,';
+        $sql .= 'mensagem_personalizada=? where id = ?';        
+        
+        $stmt = $link->prepare($sql);        
+        $stmt->bind_param(
+            "ssssssi",
+            $nome,$telefone,$email,$funcao,$informacoesConvite,$mensagemPersonalizada,$id
+        );
+        
+        $nome = $integrante->getNome();
+        $telefone = $integrante->getTelefone();
+        $email = $integrante->getEmail();
+        $funcao = $integrante->getFuncao();        
+        $informacoesConvite = $integrante->getInformacoesConvite();
+        $mensagemPersonalizada = $integrante->getMensagemPersonalizada();
+        $id = $integrante->getId();
+
+        $stmt->execute();        
+
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+
+        $stmt->close();
+        $conn->closeConn();
+        
+        return $msg;
+    }
 
     function remover($id){}
 

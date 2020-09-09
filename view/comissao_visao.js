@@ -34,10 +34,21 @@ function incluirIntegrante(){
     window.location.href='../view/?p=iin&t=comvis&ic='+idComissao;
 }
 
+//INTEGRANTE | EXIBIR
 function exibirIntegrante(id,idComissao){
     var id = id;
     var idComissao = idComissao;
     var url = '../view/?p=ivis&id=' + id;
     url += '&ic=' + idComissao;
+    window.location.href = url;
+}
+
+//INTEGRANTE | EDITAR
+function editarIntegrante(id,idComissao){
+    var id = id;
+    var idComissao = idComissao;
+    var url = '../view/?p=ied&id=' + id;
+    url += '&ic=' + idComissao;
+    url += '&t=comvis'
     window.location.href = url;
 }

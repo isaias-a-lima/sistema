@@ -68,6 +68,13 @@ $empresa = EmpresaController::exibirEmpresa();
             <tr>
                 <td><?= $empresa->getCnpj() ?></td>
             </tr>
+
+            <tr>
+                <th>URL Sistema</th>
+            </tr>
+            <tr>
+                <td><?= $empresa->getUrlSistema() ?></td>
+            </tr>
         </table>
 
     </div>

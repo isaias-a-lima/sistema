@@ -17,6 +17,7 @@ class EmpresaController{
         $msg = $empresa->setEmailFinanceiro($dados['emailFinanceiro']);
         $msg = $empresa->setEndereco($dados['endereco']);
         $msg = $empresa->setCnpj($dados['cnpj']);
+        $msg = $empresa->setUrlSistema($dados['urlSistema']);
         if(is_string($msg)){
             return '<div class="alert alert-danger">' . $msg . '</div>';
         }else{
