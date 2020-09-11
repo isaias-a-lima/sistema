@@ -36,7 +36,7 @@ class IntegranteController implements IntegranteCrud{
         }
         if(is_numeric($res)){
             $email = new Email();
-            $resEmail = $email->emailCadastroIntegrante($dto->getEmail(),$dto->getNome(),$dto->getSenha(),'Formaprit');
+            $resEmail = $email->emailCadastroIntegrante($dto->getEmail(),$dto->getNome(),$dto->getSenha());
             echo "<script>alert('$resEmail')</script>";
             return $res;
         }

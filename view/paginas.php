@@ -12,7 +12,7 @@ switch ($p) {
     case 'l':
         (isset($_SESSION['nomeSession']) && $_SESSION['funcaoSession'] == 'Funcionario') ?
             include '../view/ja_existe_sessao.php' :
-            include '../view/formando_logar.php';
+            include '../view/integrante_logar.php';
         break;
     case 'lo':
         include '../view/logout.php';
