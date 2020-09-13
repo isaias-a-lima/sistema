@@ -10,9 +10,13 @@ if (!empty($_GET['p'])) {
 
 switch ($p) {
     case 'l':
-        (isset($_SESSION['nomeSession']) && $_SESSION['funcaoSession'] == 'Funcionario') ?
-            include '../view/ja_existe_sessao.php' :
+        if (isset($_SESSION['nomeSession']) && $_SESSION['funcaoSession'] == 'Funcionario') {
+            include '../view/ja_existe_sessao.php';
+        } else if (isset($_SESSION['nomeSession'])) {
+            include '../view/integrante_usuario.php';
+        } else {
             include '../view/integrante_logar.php';
+        }
         break;
     case 'lo':
         include '../view/logout.php';
@@ -77,6 +81,12 @@ switch ($p) {
         break;
     case 'ied':
         include '../view/integrante_editar.php';
+        break;
+    case 'ms':
+        include '../view/integrante_mudar_senha.php';
+        break;
+    case 'ad':
+        include '../view/integrante_atualizar_dados.php';
         break;
     default:
         include '../view/home.php';

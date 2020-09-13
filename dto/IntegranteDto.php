@@ -14,10 +14,10 @@ class IntegranteDto extends PessoaDto{
 
     public function __construct($pessoa){
         parent::__construct($pessoa);
-        $this->id = $pessoa['id'];
-        $this->idComissao = $pessoa['idComissao'];
-        $this->informacoesConvite = $pessoa['informacoesConvite'];
-        $this->mensagemPersonalizada = $pessoa['mensagemPersonalizada'];
+        $this->id = isset($pessoa['id']) ? $pessoa['id'] : '';
+        $this->idComissao = isset($pessoa['idComissao']) ? $pessoa['idComissao'] : '';
+        $this->informacoesConvite = isset($pessoa['informacoesConvite']) ? $pessoa['informacoesConvite'] : '';
+        $this->mensagemPersonalizada = isset($pessoa['mensagemPersonalizada']) ? $pessoa['mensagemPersonalizada'] : '';
     }
     
     public function getId()

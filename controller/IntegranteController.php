@@ -88,4 +88,32 @@ class IntegranteController implements IntegranteCrud{
         $res = $res->fetch_array();
         return $res;
     }
+
+    function logar($dto){
+
+        if(empty($dto->getEmail())){
+            return 'E-mail é obrigatório!';
+        }
+        if(empty($dto->getSenha())){
+            return 'Senha é obrigatório!';
+        }
+        $dao = new IntegranteDao();
+        $res = $dao->logar($dto);
+
+        if(is_array($res) || is_object($res)){
+
+            $row = $res->fetch_array();
+            if(!empty($row['nome'])){                
+                $_SESSION['idSession'] = $row['id'];
+                $_SESSION['nomeSession'] = $row['nome'];
+                $_SESSION['emailSession'] = $row['email'];
+                $_SESSION['funcaoSession'] = 'Formando';
+                return true;
+            }else{
+                return 'Verifique seu usuário e senha!';
+            }
+
+        }
+        return $res;
+    }
 }

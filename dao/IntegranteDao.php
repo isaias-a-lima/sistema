@@ -120,8 +120,32 @@ class IntegranteDao implements IntegranteCrud{
         $stmt->bind_param("i", $id);
 
         $stmt->execute();
+        
         if($stmt->error){
             $msg = $stmt->error;
+        }else{
+            $msg = $stmt->get_result();
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
+
+    function logar($dto){
+        $msg = null;
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = "select * from integrantes where email=? and senha=?";
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("ss",$email,$senha);
+
+        $email = $dto->getEmail();
+        $senha = $dto->getSenha();
+
+        $stmt->execute();
+
+        if($stmt->error){
+            $msg = $stmt->error . '<br>' . $sql;
         }else{
             $msg = $stmt->get_result();
         }
