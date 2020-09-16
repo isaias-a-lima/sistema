@@ -18,6 +18,8 @@ class EmpresaController{
         $msg = $empresa->setEndereco($dados['endereco']);
         $msg = $empresa->setCnpj($dados['cnpj']);
         $msg = $empresa->setUrlSistema($dados['urlSistema']);
+        $msg = $empresa->setLinksDir($dados['linksDir']);
+        $msg = $empresa->setFilesDir($dados['filesDir']);
         if(is_string($msg)){
             return '<div class="alert alert-danger">' . $msg . '</div>';
         }else{

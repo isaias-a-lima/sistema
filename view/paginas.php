@@ -82,11 +82,11 @@ switch ($p) {
     case 'ied':
         include '../view/integrante_editar.php';
         break;
-    case 'ms':
-        include '../view/integrante_mudar_senha.php';
+    case 'el':
+        include '../view/integrante_enviar_link.php';
         break;
-    case 'ad':
-        include '../view/integrante_atualizar_dados.php';
+    case 'lvis':
+        include '../view/link_visao.php';
         break;
     default:
         include '../view/home.php';

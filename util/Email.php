@@ -91,7 +91,42 @@ class Email{
         ";
         $res = $this->enviarEmail($de, $para, $cc, $assunto, $mensagem, $msgSucesso, $msgErro);
         return $res;
-    }    
+    }
+
+    function emailEnvioDeLink($paraEmail,$paraNome,$deNome,$targetFile){
+        $empresa = EmpresaController::exibirEmpresa();
+        $urlSistema = $empresa->getUrlSistema();        
+        $urlLink = $urlSistema . substr($targetFile,3);
+        $assinatura = $empresa->getNome();
+        $de = $empresa->getEmailContato();
+        $cc = '';
+        $assunto = 'Envio de link';
+        $msgSucesso = 'Link enviado com sucesso!';
+        $msgErro = 'Não foi possível enviar o Link!';
+        $mensagem = "
+        <p>
+        Olá $paraNome!
+        </p>
+        <p>
+        Você recebeu um link de $deNome!
+        </p>
+        <p>
+        Clique no link para baixar:<br>
+        <a href='$urlLink'>$urlLink</a>
+        </p>
+        <p>
+        Ou, você também pode ter acesso ao link acessando o sistema com o seu e-mail cadastrado e a senha.<br>
+        Clique no link para acessar o sistema:<br>
+        <a href='$urlSistema'>$urlSistema</a>
+        </p>
+        <p>
+        Atenciosamente,<br>
+        $assinatura
+        </p>
+        ";
+        $res = $this->enviarEmail($de, $paraEmail, $cc, $assunto, $mensagem, $msgSucesso, $msgErro);
+        return $res;
+    }
 } 
 
 ?>

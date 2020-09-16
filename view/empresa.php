@@ -75,6 +75,21 @@ $empresa = EmpresaController::exibirEmpresa();
             <tr>
                 <td><?= $empresa->getUrlSistema() ?></td>
             </tr>
+
+            <tr>
+                <th>Diretório de Links</th>
+            </tr>
+            <tr>
+                <td><?= $empresa->getLinksDir() ?></td>
+            </tr>
+
+            <tr>
+                <th>Diretório de Arquivos</th>
+            </tr>
+            <tr>
+                <td><?= $empresa->getFilesDir() ?></td>
+            </tr>
+
         </table>
 
     </div>

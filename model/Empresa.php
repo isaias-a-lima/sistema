@@ -11,6 +11,8 @@ class Empresa
     private $endereco;
     private $cnpj;
     private $urlSistema;
+    private $linksDir;
+    private $filesDir;
 
     public function __construct()
     {
@@ -63,6 +65,20 @@ class Empresa
             $this->urlSistema = fread($file, filesize($pathFile));
             fclose($file);
         }
+
+        $pathFile = '../config/empresaLinksDir.txt';
+        if (filesize($pathFile) > 0) {
+            $file = fopen($pathFile, 'r');
+            $this->linksDir = fread($file, filesize($pathFile));
+            fclose($file);
+        }
+
+        $pathFile = '../config/empresaFilesDir.txt';
+        if (filesize($pathFile) > 0) {
+            $file = fopen($pathFile, 'r');
+            $this->filesDir = fread($file, filesize($pathFile));
+            fclose($file);
+        }
     }
 
     public function getNome()
@@ -98,6 +114,16 @@ class Empresa
     public function getUrlSistema()
     {
         return $this->urlSistema;
+    }
+
+    public function getLinksDir()
+    {
+        return $this->linksDir;
+    }
+
+    public function getFilesDir()
+    {
+        return $this->filesDir;
     }
 
     public function setNome($nome)
@@ -183,6 +209,32 @@ class Empresa
             return 1;
         } else {
             return 'Não foi possível alterar o url do sistema!';
+        }
+    }
+
+    public function setLinksDir($linksDir)
+    {
+        $file = fopen('../config/empresaLinksDir.txt', 'w');
+        $res = fwrite($file, $linksDir);
+        fclose($file);
+        if (is_numeric($res)) {
+            $this->linksDir = $linksDir;
+            return 1;
+        } else {
+            return 'Não foi possível alterar o diretorio de links!';
+        }
+    }
+
+    public function setFilesDir($filesDir)
+    {
+        $file = fopen('../config/empresaFilesDir.txt', 'w');
+        $res = fwrite($file, $filesDir);
+        fclose($file);
+        if (is_numeric($res)) {
+            $this->filesDir = $filesDir;
+            return 1;
+        } else {
+            return 'Não foi possível alterar o diretorio de arquivos!';
         }
     }
 }

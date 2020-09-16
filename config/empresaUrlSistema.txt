@@ -1,1 +1,1 @@
-https://www.ikdesigns.com.br/formaprint/sistema
+http://localhost/sistema/

@@ -67,6 +67,16 @@ $empresa = EmpresaController::exibirEmpresa();
                     <input type="text" name="urlSistema" required class="form-control" value="<?= $empresa->getUrlSistema() ?>">
                 </div>
 
+                <div class="form-group">
+                    <label>Diretório de Links</label>
+                    <input type="text" name="linksDir" readonly required class="form-control" value="<?= $empresa->getLinksDir() ?>">
+                </div>
+
+                <div class="form-group">
+                    <label>Diretório de Arquivos</label>
+                    <input type="text" name="filesDir" required class="form-control" value="<?= $empresa->getFilesDir() ?>">
+                </div>
+
                 <button class="btn btn-danger">Salvar</button>
             </form>
         </p>

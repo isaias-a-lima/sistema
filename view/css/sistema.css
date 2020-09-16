@@ -3,6 +3,12 @@ body{
     
 }
 
+.tabela td{
+    padding: 3px 5px;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
 th{
     background:#eee;
 }
