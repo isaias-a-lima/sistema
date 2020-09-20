@@ -6,29 +6,17 @@ $dataHora = Date('Y-m-d H:i:s');
 $idComissao = isset($_GET['ic']) ? $_GET['ic'] : '';
 $idIntegrante = isset($_GET['id']) ? $_GET['id'] : '';
 $idFuncionario = isset($_SESSION['idSession']) ? $_SESSION['idSession'] : '';
+$nomeFuncionario = $_SESSION['nomeSession'];
 
 $target = isset($_GET['t']) ? $_GET['t'] : '';
 $urlRetorno = '?p=' . $target . '&ic=' . $idComissao . '&id=' . $idIntegrante;
 
-require_once '../controller/IntegranteController.php';
 require_once '../util/Arquivo.php';
 require_once '../dto/LinkDto.php';
 require_once '../controller/LinkController.php';
 
-use controller\IntegranteController;
 use controller\LinkController;
 use dto\LinkDto;
-
-$integrante = new IntegranteController();
-$nomeIntegrante = '';
-$row = $integrante->selecionar($idIntegrante);
-if (is_string($row)) {
-    $msg = $row;
-}else{
-    $nomeIntegrante = $row['nome'];
-    $emailIntegrante = $row['email'];
-    $nomeFuncionario = $_SESSION['nomeSession'];
-}
 
 if (isset($_POST['descricao'])) {
 
@@ -36,7 +24,7 @@ if (isset($_POST['descricao'])) {
     $dto->setArquivo($_FILES['arquivo']);
 
     $controller = new LinkController();
-    $res = $controller->incluir($dto);
+    $res = $controller->incluirLinkParaComissao($dto);
 
     if(is_string($res)){
         $msg = $res;
@@ -45,18 +33,17 @@ if (isset($_POST['descricao'])) {
         $msg = '<div class="alert alert-danger">Link gerado com sucesso!</div>';
         echo '<script>setTimeout(function(){window.location.href="../view/'. $urlRetorno .'"},2000)</script>';
     }else if(is_numeric($res) && $res == 2){
-        $msg = '<div class="alert alert-danger">Link gerado com sucesso!<br>Foi enviado um e-mail ao formando!</div>';
+        $msg = '<div class="alert alert-danger">Link gerado com sucesso!<br>Foi enviado um e-mail aos formandos!</div>';
         echo '<script>setTimeout(function(){window.location.href="../view/'. $urlRetorno .'"},2000)</script>';
     }
 }
 
 ?>
-
 <div class="row">
     <div class="col-sm-12 col-md-6" style="min-height: 400px;">
 
-        <h2><span class="glyphicon glyphicon-link"></span> Enviar Link ao formando</h2>
-        <h4>Para: <?=$nomeIntegrante?></h4>
+        <h2><span class="glyphicon glyphicon-link"></span> Enviar Link à Comissão</h2>
+        <h4>ID Comissão: <?=$idComissao?></h4>
 
         <ul class="pager">
             <li class="previous"><a href="../view/<?= $urlRetorno ?>">Voltar</a></li>
@@ -69,10 +56,10 @@ if (isset($_POST['descricao'])) {
 
                 <input type="hidden" name="idFuncionario" value="<?=$idFuncionario?>">
                 <input type="hidden" name="idComissao" value="<?=$idComissao?>">
-                <input type="hidden" name="idIntegrante" value="<?=$idIntegrante?>">
+                <input type="hidden" name="idIntegrante" value="0">
                 <input type="hidden" name="dataEnvio" value="<?=$dataHora?>">
-                <input type="hidden" name="nomeIntegrante" value="<?=$nomeIntegrante?>">
-                <input type="hidden" name="emailIntegrante" value="<?=$emailIntegrante?>">
+                <input type="hidden" name="nomeIntegrante" value="">
+                <input type="hidden" name="emailIntegrante" value="">
                 <input type="hidden" name="nomeFuncionario" value="<?=$nomeFuncionario?>">
 
 
@@ -92,3 +79,4 @@ if (isset($_POST['descricao'])) {
 
     </div>
 </div>
+<script src="../view/comissao_enviar_link.js"></script>

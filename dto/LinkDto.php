@@ -6,6 +6,7 @@ class LinkDto{
 
     private $id;
     private $idFuncionario;
+    private $idComissao;
     private $idIntegrante;
     private $arquivo;
     private $nomeArquivo;
@@ -19,6 +20,7 @@ class LinkDto{
     {
         $this->id = isset($link['id']) ? $link['id'] : '';
         $this->idFuncionario = isset($link['idFuncionario']) ? $link['idFuncionario']: '';
+        $this->idComissao = isset($link['idComissao']) ? $link['idComissao']: '';
         $this->idIntegrante = isset($link['idIntegrante']) ? $link['idIntegrante'] : '';
         
         $this->descricao = isset($link['descricao']) ? $link['descricao'] : '';
@@ -86,6 +88,11 @@ class LinkDto{
     public function getNomeFuncionario()
     {
         return $this->nomeFuncionario;
+    }
+    
+    public function getIdComissao()
+    {
+        return $this->idComissao;
     }
 }
 ?>

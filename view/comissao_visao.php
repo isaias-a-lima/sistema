@@ -11,9 +11,9 @@ $id = $faculdade = $curso = $dataFormatura = $dataInicioArte = $dataLimiteAprova
 $dataPrevistaEntrega = $enderecoEntrega = $tempoAproxFrete = $qtdInicialConvites = '';
 $valorProjeto = $statusProjeto = '';
 
-if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_GET['ic'])) {
+if (isset($_GET['ic']) && !empty($_GET['ic'])) {
 
-    $idComissao = isset($_GET['id']) ? $_GET['id'] : $_GET['ic'];
+    $idComissao = $_GET['ic'];
 
     $comissao = new ComissaoController();
 
@@ -157,6 +157,8 @@ if (isset($_GET['id']) && !empty($_GET['id']) || isset($_GET['ic']) && !empty($_
             Formandos &nbsp;
             <button id="btn_iin" class="btn btn-danger"><span class="glyphicon glyphicon-plus"></span> Novo</button>
             <input type="hidden" id="idComissao" value="<?=$id?>">
+
+            <button id="btn_elc" class="btn btn-danger"><span class="glyphicon glyphicon-link"></span> Enviar Link à Comissão</button>
         </h4>
 
         <table class="table">

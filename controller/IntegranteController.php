@@ -116,4 +116,13 @@ class IntegranteController implements IntegranteCrud{
         }
         return $res;
     }
+
+    function listarPorComissao($idComissao){
+        $dao = new IntegranteDao();
+        $res = $dao->listarPorComissao($idComissao);
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível listar os Integrantes!</div>';
+        }
+        return $res;
+    }
 }

@@ -52,3 +52,13 @@ function editarIntegrante(id,idComissao){
     url += '&t=comvis'
     window.location.href = url;
 }
+
+//COMISSÃO | ENVIAR LINK À COMISSÃO
+var btn_elc = document.getElementById('btn_elc');
+btn_elc.addEventListener('click',function(){    
+    var idComissao = document.getElementById('idComissao').value;
+    var url = '../view/?p=elc';
+    url += '&ic=' + idComissao;
+    url += '&t=comvis'
+    window.location.href = url;
+});

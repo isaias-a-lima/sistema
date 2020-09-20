@@ -44,7 +44,7 @@ $integrante = new IntegranteController();
 
             <button id="btn_el" class="btn btn-danger">
                 <span class="glyphicon glyphicon-link"></span>
-                Enviar Link
+                Enviar Link ao formando
             </button>
             
         </p>
@@ -103,7 +103,7 @@ $integrante = new IntegranteController();
                     $urlLink = '';
 
                     $link = new LinkController();
-                    $links = $link->listarPorIntegrante($idIntegrante);
+                    $links = $link->listarPorIntegrante($idIntegrante,$idComissao);
                     if(is_string($links)){
                         echo 'ERRO: ' . $links;
                     }else{                        

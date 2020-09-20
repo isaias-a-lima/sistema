@@ -6,6 +6,7 @@ class Link{
 
     private $id;
     private $idFuncionario;
+    private $idComissao;
     private $idIntegrante;
     private $nomeArquivo;
     private $descricao;
@@ -15,6 +16,7 @@ class Link{
     {
         $this->id = $dto->getId();
         $this->idFuncionario = $dto->getIdFuncionario();
+        $this->idComissao = $dto->getIdComissao();
         $this->idIntegrante = $dto->getIdIntegrante();
         $this->nomeArquivo = $dto->getNomeArquivo();
         $this->descricao = $dto->getDescricao();
@@ -40,7 +42,6 @@ class Link{
     {
         return $this->dataEnvio;
     }
-
     
     public function getNomeArquivo()
     {
@@ -50,6 +51,11 @@ class Link{
     public function getDescricao()
     {
         return $this->descricao;
+    }
+    
+    public function getIdComissao()
+    {
+        return $this->idComissao;
     }
 }
 ?>

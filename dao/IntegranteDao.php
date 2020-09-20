@@ -153,6 +153,27 @@ class IntegranteDao implements IntegranteCrud{
         $conn->closeConn();
         return $msg;
     }
+
+    function listarPorComissao($idComissao){
+        $msg = null;
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = "select * from integrantes where id_comissao = ?";
+
+        $stmt = $link->prepare($sql);
+        $stmt->bind_param("i", $idComissao);
+
+        $stmt->execute();
+        
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->get_result();
+        }
+        $stmt->close();
+        $conn->closeConn();
+        return $msg;
+    }
 }
 
 ?>

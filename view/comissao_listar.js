@@ -44,9 +44,9 @@ function cancelar(id) {
 }
 
 //COMISSÃO | Visão
-function visao(id){
-    var id = id;
-    window.location.href="../view/?p=comvis&id="+id;
+function visao(ic){
+    var ic = ic;
+    window.location.href="../view/?p=comvis&ic="+ic;
 }
 
 //Comissão | Incluir

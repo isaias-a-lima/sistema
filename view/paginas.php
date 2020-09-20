@@ -88,6 +88,9 @@ switch ($p) {
     case 'lvis':
         include '../view/link_visao.php';
         break;
+    case 'elc':
+        include '../view/comissao_enviar_link.php';
+        break;
     default:
         include '../view/home.php';
         break;
