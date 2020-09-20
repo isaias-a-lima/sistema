@@ -48,7 +48,7 @@ if (isset($_POST['id']) && isset($_POST['acao'])) {
         $email = $res['email'];
         $funcao = $res['funcao'];
         $senha = $res['senha'];
-        $statusFuncionario = $res['statusFuncionario'];
+        $statusFuncionario = $res['status_funcionario'];
     }
 }
 

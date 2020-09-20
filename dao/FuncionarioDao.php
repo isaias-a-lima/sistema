@@ -16,7 +16,7 @@ class FuncionarioDao{
         $conn = new Connection();
         $link = $conn->getConn();
         $sql = 'insert into funcionarios ';
-        $sql .= '(nome,telefone,email,funcao,senha,statusFuncionario) ';
+        $sql .= '(nome,telefone,email,funcao,senha,status_funcionario) ';
         $sql .= 'values(?,?,?,?,?,?)';
         
         $stmt = $link->prepare($sql);        
@@ -46,7 +46,7 @@ class FuncionarioDao{
         $funcionario = new Funcionario($dto);
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = 'update funcionarios set nome=?,telefone=?,email=?,funcao=?,statusFuncionario=? where id=?';        
+        $sql = 'update funcionarios set nome=?,telefone=?,email=?,funcao=?,status_funcionario=? where id=?';        
         
         $stmt = $link->prepare($sql);        
         $stmt->bind_param("ssssss",$nome,$telefone,$email,$funcao,$statusFuncionario,$id);
@@ -102,7 +102,7 @@ class FuncionarioDao{
         $msg = null;
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = "update funcionarios set statusFuncionario='Removido' where id=?";
+        $sql = "update funcionarios set status_funcionario='Removido' where id=?";
         $stmt = $link->prepare($sql);
         $stmt->bind_param("i",$id);
         $stmt->execute();
@@ -120,7 +120,7 @@ class FuncionarioDao{
         $msg = null;
         $conn = new Connection();
         $link = $conn->getConn();
-        $sql = "select * from funcionarios where nome like ? and statusFuncionario != 'Removido' order by nome";
+        $sql = "select * from funcionarios where nome like ? and status_funcionario != 'Removido' order by nome";
         $stmt = $link->prepare($sql);
         $stmt->bind_param("s",$nome);
         $nome = '%' . $busca . '%';
