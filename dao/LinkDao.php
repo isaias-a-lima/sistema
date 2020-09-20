@@ -69,7 +69,7 @@ class LinkDao{
         $link = $conn->getConn();
         $sql = 'select l.id,l.id_funcionario,f.nome as fnome,l.id_comissao,l.id_integrante,i.nome as inome,l.nome_arquivo,l.descricao,l.data_envio ';
         $sql .= 'from links as l inner join funcionarios as f on f.id = l.id_funcionario ';
-        $sql .= 'inner join integrantes as i on i.id = l.id_integrante ';
+        $sql .= 'left join integrantes as i on i.id = l.id_integrante ';
         $sql .= 'where l.id = ?';
 
         $stmt = $link->prepare($sql);

@@ -19,6 +19,8 @@ $integrante = new IntegranteController();
     if(is_string($res)){
         $msg = $res;
     }
+
+    $idComissao = $res['id_comissao'];
 ?>
 
 <div class="row">

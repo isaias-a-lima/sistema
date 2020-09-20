@@ -8,22 +8,40 @@ use controller\LinkController;
 
 $msg = '';
 $urlRetorno = '';
-$idLink = isset($_GET['idl']) ? $_GET['idl'] : 0;
+$idl = isset($_GET['idl']) ? $_GET['idl'] : 0;
 $empresa = EmpresaController::exibirEmpresa();
 $urlSistema = $empresa->getUrlSistema();
 $linksDir = $empresa->getLinksDir();
 
+$idLink = $idIntegrante = $idComissao = 0;
+$descricao = $dataEnvio = $nomeArquivo = $nomeFuncionario = $nomeIntegrante = '';
 $controller = new LinkController();
-$link = $controller->selecionar($idLink);
+$link = $controller->selecionar($idl);
 if(is_string($link)){
     $msg = $link;
+}else if(is_object($link)){
+    $row = $link->fetch_array();
+    if(isset($row['id'])){
+        $idLink = $row['id'];
+        $idIntegrante = $row['id_integrante'];
+        $idComissao = $row['id_comissao'];
+        $nomeIntegrante = $row['inome'];
+        if(empty($nomeIntegrante)){
+            $nomeIntegrante = "Todos da Comissão ID: $idComissao";
+        }
+        $nomeFuncionario = $row['fnome'];        
+        $nomeArquivo = $row['nome_arquivo'];
+        $descricao = $row['descricao'];
+        $dataEnvio = $row['data_envio'];
+    }
+    
 }
 
-$urlRetorno = '?p=ivis&id=' . $link['id_integrante'] . '&ic=' . $link['id_comissao'];
+$urlRetorno = '?p=ivis&id=' . $idIntegrante . '&ic=' . $idComissao;
 
-$descricao = str_replace(array("\r\n","\n","\r"),"<br>",$link['descricao']);
-$dataEnvio = date('d/m/Y H:i',strtotime($link['data_envio']));
-$urlLink = $urlSistema . $linksDir . $link['id'] .'_' . $link['id_integrante'] . '_' . $link['nome_arquivo'];
+$descricao = str_replace(array("\r\n","\n","\r"),"<br>",$descricao);
+$dataEnvio = date('d/m/Y H:i',strtotime($dataEnvio));
+$urlLink = $urlSistema . $linksDir . $idLink .'_' . $idIntegrante . '_' . $nomeArquivo;
 
 ?>
 
@@ -33,7 +51,7 @@ $urlLink = $urlSistema . $linksDir . $link['id'] .'_' . $link['id_integrante'] .
         <h2><span class="glyphicon glyphicon-link"></span> Link enviado</h2>
 
         <ul class="pager">
-            <li class="previous"><a href="../view/<?=$urlRetorno?>">Voltar</a></li>
+            <li class="previous"><a href="#" onclick="window.history.back()">Voltar</a></li>
         </ul>
 
         <?= $msg ?>
@@ -42,13 +60,13 @@ $urlLink = $urlSistema . $linksDir . $link['id'] .'_' . $link['id_integrante'] .
             <tr><th>Data e hora</th></tr>
             <tr><td><?=$dataEnvio?></td></tr>
             <tr><th>De</th></tr>
-            <tr><td><?=$link['fnome']?></td></tr>
+            <tr><td><?=$nomeFuncionario?></td></tr>
             <tr><th>Para</th></tr>
-            <tr><td><?=$link['inome']?></td></tr>
+            <tr><td><?=$nomeIntegrante?></td></tr>
             <tr><th>Link gerado</th></tr>
             <tr><td><a href="<?=$urlLink?>" target="_new"><?=$urlLink?></a></td></tr>
             <tr><th>Conteúdo do link</th></tr>
-            <tr><td><?=$link['nome_arquivo']?></td></tr>
+            <tr><td><?=$nomeArquivo?></td></tr>
             <tr><th>Descrição</th></tr>
             <tr><td><?=$descricao?></td></tr>
         </table>

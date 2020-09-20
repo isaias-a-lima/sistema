@@ -18,10 +18,10 @@ class LinkDto{
 
     public function __construct($link)
     {
-        $this->id = isset($link['id']) ? $link['id'] : '';
-        $this->idFuncionario = isset($link['idFuncionario']) ? $link['idFuncionario']: '';
-        $this->idComissao = isset($link['idComissao']) ? $link['idComissao']: '';
-        $this->idIntegrante = isset($link['idIntegrante']) ? $link['idIntegrante'] : '';
+        $this->id = isset($link['id']) ? $link['id'] : 0;
+        $this->idFuncionario = isset($link['idFuncionario']) ? $link['idFuncionario']: 0;
+        $this->idComissao = isset($link['idComissao']) ? $link['idComissao']: 0;
+        $this->idIntegrante = isset($link['idIntegrante']) ? $link['idIntegrante'] : 0;
         
         $this->descricao = isset($link['descricao']) ? $link['descricao'] : '';
         $this->dataEnvio = isset($link['dataEnvio']) ? $link['dataEnvio'] : '';

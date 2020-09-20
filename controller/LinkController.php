@@ -145,8 +145,8 @@ class LinkController{
             $msg = "<div class='alert alert-danger'>$res</div>";            
             return $msg;
         }
-        $row = $res->fetch_array();
-        return $row;
+        //$row = $res->fetch_array();
+        return $res;
     }
 
     function listarPorIntegrante($idIntegrante,$idComissao){
