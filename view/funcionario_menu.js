@@ -29,3 +29,11 @@ var btn_ilis = document.getElementById('btn_ilis');
 btn_ilis.addEventListener('click',function(){
     window.location.href='../view/?p=ilis';
 });
+
+//PAGAMENTO | CONSULTAR
+var btn_pgs = document.getElementById("btn_pgs");
+btn_pgs.addEventListener("click",function(){
+    var url = '../view/?p=pgs';    
+    url += '&t=m'
+    window.location.href = url;
+});

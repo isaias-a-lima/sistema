@@ -3,6 +3,30 @@ body{
     
 }
 
+.info{
+    position: relative;
+    float: left;
+}
+
+.info .info-into{
+    position: absolute;
+    display: none;
+    background:#fff;
+    color:#690027;
+    font-weight: bold;
+    padding: 5px 10px;    
+    box-shadow: 0 2.5px 5px #000;
+    border-radius: 0 10px 0 10px;
+    top: 35px;
+    
+}
+
+.info:hover .info-into{
+    display: block;
+}
+
+
+
 #myModal{
     display: none;
     position: fixed;

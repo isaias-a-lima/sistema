@@ -33,7 +33,7 @@
             <button id="btn_ilis" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-education"></span> Formandos
             </button>
-            <button type="button" class="btn btn-danger">
+            <button id="btn_pgs" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-usd"></span> Pagamentos
             </button>
             <button type="button" class="btn btn-danger" style="display: none;">

@@ -91,6 +91,12 @@ switch ($p) {
     case 'elc':
         include '../view/comissao_enviar_link.php';
         break;
+    case 'pgi':
+        include '../view/pagamento_incluir.php';
+        break;
+    case 'pgs':
+        include '../view/pagamento_listar.php';
+        break;
     default:
         include '../view/home.php';
         break;

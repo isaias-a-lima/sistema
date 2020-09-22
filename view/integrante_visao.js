@@ -27,3 +27,14 @@ function verLink(id){
     url += '&t=ivis'
     window.location.href = url;
 }
+
+//PAGAMENTO | INCLUIR
+var btn_pg = document.getElementById("btn_pg");
+btn_pg.addEventListener("click",function(){
+    var id = document.getElementById('idIntegrante').value;
+    var idComissao = document.getElementById('idComissao').value;
+    var url = '../view/?p=pgi&id=' + id;
+    url += '&ic=' + idComissao;
+    url += '&t=ivis'
+    window.location.href = url;
+});
