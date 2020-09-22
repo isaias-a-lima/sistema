@@ -50,8 +50,7 @@ if (isset($_GET['ic']) && !empty($_GET['ic'])) {
         $tempoAproxFrete = $res['tempo_aprox_frete'];
         $tempoAproxFrete .= ' minutos';
         $qtdInicialConvites = $res['qtd_inicial_convites'];
-        $valorProjeto = $res['valor_projeto'];
-        $valorProjeto = 'R$ ' . $valorProjeto;
+        $valorProjeto = 'R$ ' . number_format($res['valor_projeto'], 2, ",", ".");
         $statusProjeto = $res['status_projeto'];
     }
 } else {
