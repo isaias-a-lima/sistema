@@ -97,6 +97,9 @@ switch ($p) {
     case 'pgs':
         include '../view/pagamento_listar.php';
         break;
+    case 'pged':
+        include '../view/pagamento_editar.php';
+        break;
     default:
         include '../view/home.php';
         break;

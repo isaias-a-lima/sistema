@@ -20,7 +20,15 @@ class PagamentoController implements PagamentoCrud{
         return $res;
     }
 
-    function editar($dto){}
+    function editar($dto){
+        $dao = new PagamentoDao();
+        $res = $dao->editar($dto);
+        if(is_string($res)){
+            $msg = '<div class="alert alert-danger">'. $res .'</div>';            
+            return $msg;
+        }
+        return $res;
+    }
 
     function remover($id){}
 

@@ -38,3 +38,11 @@ btn_pg.addEventListener("click",function(){
     url += '&t=ivis'
     window.location.href = url;
 });
+
+//PAGAMENTO | Editar
+function editarPagamento(idPagamento){
+    var idPagamento = idPagamento;    
+    var url = '../view/?p=pged&ip=' + idPagamento;
+    url += '&t=ivis'
+    window.location.href = url;
+}

@@ -118,7 +118,8 @@ $idComissao = $res['id_comissao'];
                 <tr>
                     <th>Arquivo</th>
                     <th>Data</th>
-                    <th colspan="2">Opções</th>
+                    <th><span class="glyphicon glyphicon-option-vertical"></span></th>
+                    <th><span class="glyphicon glyphicon-option-vertical"></span></th>
                 </tr>
 
                 <?php
@@ -161,7 +162,7 @@ $idComissao = $res['id_comissao'];
                 <tr>
                     <th>Arquivo</th>
                     <th>Data</th>
-                    <th>Opções</th>
+                    <th><span class="glyphicon glyphicon-option-vertical"></span></th>
                 </tr>
             </table>
         </div>
@@ -186,7 +187,7 @@ $idComissao = $res['id_comissao'];
                 <th>Status</th>
                 <th>Forma de Pgto.</th>
                 <th>Valor</th>
-                <th>&nbsp;</th>
+                <th><span class="glyphicon glyphicon-option-vertical"></span></th>
             </tr>
 
             <?php

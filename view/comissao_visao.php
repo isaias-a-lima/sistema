@@ -183,7 +183,7 @@ if (isset($_GET['ic']) && !empty($_GET['ic'])) {
             <tr>
                 <th style="width: 10%;">Id</th>
                 <th>Nome</th>
-                <th>&nbsp;</th>
+                <th style="text-align: center;"><span class="glyphicon glyphicon-option-vertical"></span></th>
             </tr>
             <?php
             if (is_array($res2) || is_object($res2)) {
@@ -191,7 +191,7 @@ if (isset($_GET['ic']) && !empty($_GET['ic'])) {
                     echo '<tr>';
                     echo '<td>' . $row2['id'] . '</td>';
                     echo '<td>' . $row2['nome'] . '</td>';
-                    echo '<td>';
+                    echo '<td style="text-align: center;">';
                     echo '<span class="glyphicon glyphicon-eye-open link" onclick="exibirIntegrante(' . $row2['id'] . ',' . $idComissao . ')"></span>';
                     echo '<span class="glyphicon glyphicon-edit link" onclick="editarIntegrante(' . $row2['id'] . ',' . $idComissao . ')"></span>';
                     echo '<span class="glyphicon glyphicon-remove link"></span>';
