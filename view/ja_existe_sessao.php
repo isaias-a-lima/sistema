@@ -12,7 +12,7 @@ if($_GET['p'] == 'l'){
         <p>
             <div class="alert alert-danger">
                 Já existe uma sessão de usuário ativa!<br>
-                Se você não é <?= strtoupper($_SESSION['nomeSession']) ?> clique em
+                Se você não é <b><?= $_SESSION['nomeSession'] ?></b> clique em
                 <a href="../view/?p=lo"><span class="glyphicon glyphicon-log-out"></span></a>
                 para sair!
             </div>

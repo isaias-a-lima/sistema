@@ -100,6 +100,12 @@ switch ($p) {
     case 'pged':
         include '../view/pagamento_editar.php';
         break;
+    case 'fic':
+        include '../view/formando_info_convite.php';
+        break;
+    case 'ficed':
+        include '../view/formando_info_convite_editar.php';
+        break;
     default:
         include '../view/home.php';
         break;

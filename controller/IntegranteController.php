@@ -125,4 +125,26 @@ class IntegranteController implements IntegranteCrud{
         }
         return $res;
     }
+
+    function editarInformacoesConvite($idIntegrante,$informacoesConvite){
+            
+        if(empty($idIntegrante)){
+            return 'Id é obrigatório!';
+        }
+        if(empty($informacoesConvite)){
+            return 'Informações Convite é obrigatório!';
+        }
+        
+        $dao = new IntegranteDao();
+        $res = $dao->editarInformacoesConvite($idIntegrante,$informacoesConvite);
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível editar Informações Convite!</div>';
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível editar os dados!</div>';
+            }
+            return $res;
+        }
+    }
 }

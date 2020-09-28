@@ -9,7 +9,7 @@ use dto\PagamentoDto;
 $idComissao = isset($_GET['ic']) ? $_GET['ic'] : '';
 $idIntegrante = isset($_GET['id']) ? $_GET['id'] : '';
 $idFuncionario = isset($_SESSION['idSession']) ? $_SESSION['idSession'] : '';
-$target = isset($_GET['t']) ? $_GET['t'] : '';
+$target = isset($_GET['t']) ? $_GET['t'] : 'm';
 $urlRetorno = '?p=' . $target . '&ic=' . $idComissao . '&id=' . $idIntegrante;
 $msg = '';
 
@@ -111,3 +111,4 @@ if (isset($_POST['dtVencInicio'])) {
 
     </div>
 </div>
+<script src="../view/pagamento_listar.js"></script>
