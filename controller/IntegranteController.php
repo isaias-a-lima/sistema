@@ -147,4 +147,26 @@ class IntegranteController implements IntegranteCrud{
             return $res;
         }
     }
+
+    function editarMensagemPersonalizada($idIntegrante,$mensagemPersonalizada){
+            
+        if(empty($idIntegrante)){
+            return 'Id é obrigatório!';
+        }
+        if(empty($mensagemPersonalizada)){
+            return 'Mensagem Personalizada é obrigatório!';
+        }
+        
+        $dao = new IntegranteDao();
+        $res = $dao->editarMensagemPersonalizada($idIntegrante,$mensagemPersonalizada);
+        if(is_string($res)){            
+            return '<div class="alert alert-danger">Não foi possível editar a Mensagem Personalizada!</div>';
+        }
+        if(is_numeric($res)){
+            if($res < 1){
+                return '<div class="alert alert-danger">Não foi possível editar a Mensagem Personalizada!</div>';
+            }
+            return $res;
+        }
+    }
 }

@@ -24,11 +24,11 @@ $idIntegrante = isset($_SESSION['idSession']) ? $_SESSION['idSession'] : NULL ;
         <div class="menu">
             <h4><span class="glyphicon glyphicon-pencil"></span> Mensagem Personalizada</h4>
 
-            <button id="btn_comin" type="button" class="btn btn-danger">
+            <button id="btn_fmp" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-eye-open"></span> Visualizar
             </button>
 
-            <button id="btn_comin" type="button" class="btn btn-danger">
+            <button id="btn_fmp_ed" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-edit"></span> Editar
             </button>
         </div>

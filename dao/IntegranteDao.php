@@ -199,6 +199,31 @@ class IntegranteDao implements IntegranteCrud{
         
         return $msg;
     }
+
+    function editarMensagemPersonalizada($idIntegrante,$mensagemPersonalizada){
+        $msg = null;
+        
+        $conn = new Connection();
+        $link = $conn->getConn();
+        $sql = 'update integrantes set mensagem_personalizada=? ';
+        $sql .= 'where id = ?';        
+        
+        $stmt = $link->prepare($sql);        
+        $stmt->bind_param("si",$mensagemPersonalizada,$idIntegrante);
+
+        $stmt->execute();        
+
+        if($stmt->error){
+            $msg = $stmt->error;
+        }else{
+            $msg = $stmt->affected_rows;
+        }
+
+        $stmt->close();
+        $conn->closeConn();
+        
+        return $msg;
+    }
 }
 
 ?>

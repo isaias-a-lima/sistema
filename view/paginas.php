@@ -106,6 +106,12 @@ switch ($p) {
     case 'ficed':
         include '../view/formando_info_convite_editar.php';
         break;
+    case 'fmp':
+        include '../view/formando_msg_pers.php';
+        break;
+    case 'fmped':
+        include '../view/formando_msg_pers_ed.php';
+        break;
     default:
         include '../view/home.php';
         break;

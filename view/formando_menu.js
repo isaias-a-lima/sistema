@@ -12,3 +12,19 @@ btn_info_edit.addEventListener("click",function(){
     url += "&t=m";
     window.location.href = url;
 });
+
+var btn_fmp = document.getElementById('btn_fmp');
+btn_fmp.addEventListener("click",function(){
+    var idi = document.getElementById('idIntegrante').value;
+    var url = "../view/?p=fmp&idi=" + idi;
+    url += "&t=m";
+    window.location.href = url;
+});
+
+var btn_fmp_ed = document.getElementById('btn_fmp_ed');
+btn_fmp_ed.addEventListener("click",function(){
+    var idi = document.getElementById('idIntegrante').value;
+    var url = "../view/?p=fmped&idi=" + idi;
+    url += "&t=m";
+    window.location.href = url;
+});
