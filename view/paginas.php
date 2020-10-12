@@ -112,6 +112,9 @@ switch ($p) {
     case 'fmped':
         include '../view/formando_msg_pers_ed.php';
         break;
+    case 'fpgt':
+        include '../view/formando_pagamentos.php';
+        break;
     default:
         include '../view/home.php';
         break;

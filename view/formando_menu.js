@@ -28,3 +28,10 @@ btn_fmp_ed.addEventListener("click",function(){
     url += "&t=m";
     window.location.href = url;
 });
+
+var btn_pgt = document.getElementById('btn_pgt');
+btn_pgt.addEventListener("click",function(){    
+    var url = "../view/?p=fpgt";
+    url += "&t=m";
+    window.location.href = url;
+});

@@ -52,7 +52,7 @@ $idIntegrante = isset($_SESSION['idSession']) ? $_SESSION['idSession'] : NULL ;
         <div class="menu">
             <h4><span class="glyphicon glyphicon-usd"></span> Pagamentos</h4>
 
-            <button id="btn_comin" type="button" class="btn btn-danger">
+            <button id="btn_pgt" type="button" class="btn btn-danger">
                 <span class="glyphicon glyphicon-eye-open"></span> Visualizar
             </button>
            

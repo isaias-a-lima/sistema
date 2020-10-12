@@ -149,8 +149,8 @@ class PagamentoDao implements PagamentoCrud{
         $msg = null;        
         $conn = new Connection();
         $link = $conn->getConn();        
-        $sql = 'select p.id,p.id_integrante,p.descricao,p.valor,p.forma_pagamento,p.status_pagamento,';
-        $sql .= 'i.nome as inome,i.id_comissao from pagamentos as p ';
+        $sql = 'select p.id,p.id_integrante,p.descricao,p.valor,p.forma_pagamento,p.data_vencimento,';
+        $sql .= 'p.data_pagamento,p.status_pagamento,i.nome as inome,i.id_comissao from pagamentos as p ';
         $sql .= 'inner join integrantes as i on i.id = p.id_integrante ';
         $sql .= 'where p.id_integrante=?';
         
