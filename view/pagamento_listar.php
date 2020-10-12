@@ -101,7 +101,7 @@ if (isset($_POST['dtVencInicio'])) {
                     echo '<td>' . $vencimento . '</td>';
                     echo '<td>' . $row['forma_pagamento'] . '</td>';
                     echo '<td>R$ ' . $valor . '</td>';
-                    echo "<td><a href='#' onclick='editarPagamento($idPagamento)'><span class='glyphicon glyphicon-edit'></span></a></td>";
+                    echo '<td><a href="#" onclick="exibirIntegrante(' . $row['id_integrante'] . ',' . $row['id_comissao'] . ')"><span class="glyphicon glyphicon-user"></span></a></td>';                    
                     echo '</tr>';
                 }
             }

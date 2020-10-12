@@ -1,8 +1,9 @@
 <?php
 $idComissao = isset($_GET['ic']) ? $_GET['ic'] : 0;
 $idIntegrante = isset($_GET['id']) ? $_GET['id'] : 0;
-
-$urlRetorno = ($idComissao > 0) ? '?p=comvis&ic=' . $idComissao : '?p=ilis';
+$target = isset($_GET['t']) ? $_GET['t'] : 'comvis&ic=' . $idComissao;
+$urlRetorno = '?p=' . $target;
+$urlRetorno = (strpos($urlRetorno,'comvis') >= 0 && $idComissao == 0) ? '?p=ilis' : $urlRetorno;
 
 $msg = '';
 
